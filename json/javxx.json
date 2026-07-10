@@ -1,0 +1,68 @@
+{
+"作者": "YYH",
+"站名": "javxx.com",
+"主页url": "https://javxx.com/cn",
+"请求头": "电脑",
+"热门推荐": "40",
+
+//https://javxx.com/cn -https://missav123.to/
+"数组": "src=\"Preview\"&&class=\"fa-light fa-thumbs-up\"",
+"图片": "img src=\"&&\"",
+"标题": "class=\"code\">&&</a>",
+"链接": "href=\"&&\"",
+
+"分类url": "https://javxx.com/cn/{cateId}?page={catePg}",
+"分类": "无码&有码&无码泄漏&VR",
+"分类值": "uncensored&censored&uncensored-leaked&vr",
+
+"搜索url":"https://missav123.to/cn/search?keyword={wd}",
+"搜索模式": "1",
+"搜索数组": "src=\"Preview\"&&class=\"fa-light fa-thumbs-up\"",
+"搜索图片": "img src=\"&&\"",
+"搜索标题": "class=\"code\">&&</a>",
+"搜索链接": "href=\"&&\"",
+
+"影片年代": "发布日期:</label> <span>&&</span>",
+"影片类型": "类别:&&</a>",
+"导演": "制作商:&&</a>",
+"简介": "请勿相信视频中出现的广告",
+
+//"线路数组": "class=\"module-tab-item tab-item\"&&/div>[不包含:光速#奇人艺士#飞速]",
+"线路标题": "class=\"fa-light fa-circle-info\">&&</h2>",
+
+"播放数组": "class=\"dropdown-menu dropdown-menu-end\">&&</ul>",
+"播放列表":"<li>&&</li>",
+"播放标题": "/div>&&</a>[包含:简体中文]",
+"跳转播放链接":"href=\"&&\"",
+
+
+"免嗅":"0",
+"嗅探词": ".m3u8#m3u8?",
+
+"筛选":{
+"uncensored":[
+{"key":"cateId","name":"类型","value":[
+{"n":"全部","v":"uncensored"},
+{"n":"FC2","v":"makers/fc2"},
+{"n":"HEYZO","v":"makers/heyzo"},
+{"n":"1pondo","v":"makers/1pondo"},
+{"n":"Caribbeancom","v":"makers/caribbeancom"},
+{"n":"Caribbeancompr","v":"makers/caribbeancompr"},
+{"n":"10musume","v":"makers/10musume"},
+{"n":"H0930","v":"makers/h0930"},
+{"n":"H4610","v":"makers/h4610"},
+{"n":"Tokyo Hot","v":"makers/tokyo-hot"},
+{"n":"XXX AV","v":"makers/xxx-av"},
+{"n":"GACHIG","v":"makers/gachig"},
+{"n":"Pacopacomama","v":"makers/Pacopacomama"},
+{"n":"siro","v":"tags/siro"},
+{"n":"259luxu","v":"tags/259luxu"},
+{"n":"200gana","v":"tags/200gana"},
+{"n":"prestige premium","v":"tags/prestige-premium"},
+{"n":"230oreco","v":"tags/230oreco"},
+{"n":"261ara","v":"tags/261ara"},
+{"n":"390jac","v":"tags/390jac"},
+{"n":"328hmdn","v":"tags/328hmdn"},
+{"n":"C0930","v":"makers/c0930"}]}]
+ }
+} 
