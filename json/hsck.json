@@ -1,0 +1,35 @@
+{
+"播放请求头": "电脑",
+"直接播放": "1",
+"热门推荐": "40",
+"主页url": "http://hsck9.cctv23.cc/",
+//黄仓https://hsck63.25img.com cctv12306.com http://hsck8.cctv23.cc/
+
+"数组": "class=\"stui-vodlist__thumb lazyload\"&&class=\"play hidden-xs\">[不包含:米菲兔]",
+"图片": "data-original=\"&&\"",
+"标题": "title=\"&&\"",
+"链接": "href=\"&&\"",
+
+"嗅探": "0",  
+"嗅探词": ".mp4#m3u8#.m3u8#/tos/#.flv#video/tos",
+
+//"线路数组":"class=\"module-tab-item tab-item&&</div>",
+//"线路标题":"1",
+
+//"播放数组":"class=\"scroll-content\">&&class=\"module-heading\">",
+//"播放列表":"<a&&</a>",
+//"播放标题":"<span>&&</span>",
+"跳转播放链接":"id=\"mp4*src=\"&&\"",
+
+"搜索模式": "0",
+"搜索url": "http://hsck9.cctv23.cc/?search2=ndafeoafa&search={wd}",
+"搜索数组": "class=\"stui-vodlist__thumb lazyload\"&&class=\"play hidden-xs\">",
+"搜索图片": "data-original=\"&&\"",
+"搜索标题": "title=\"&&\"",
+"搜索链接": "href=\"&&\"",
+"搜索链接前缀": "http://hsck9.cctv23.cc",
+
+"分类": "日本W马$rw#W马中文$wz#日本Y马$ry#Y马中文$yz#国产新片$ycgc#欧美高清$om#国产视频$gc#动漫剧情$dm",
+"分类url": "http://hsck9.cctv23.cc/?type={cateId}&p={catePg}",
+"筛选":""
+} 

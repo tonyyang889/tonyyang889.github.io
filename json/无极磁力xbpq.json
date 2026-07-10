@@ -1,0 +1,22 @@
+{
+"作者":"YYH",
+"站名":"无极磁力",
+//发布页https://cili.urls.mom/-cili.st-https://1cili.net/-https://xcili.net/-https://cili.info/
+"播放请求头": "手机",
+
+"线路数组": "class=\"magnet-title\"&&/h2>",
+"线路标题": ">&&<",
+
+"播放数组":"id=\"btn-copy\"&&</div>",
+"播放标题":"title=\"&&\"",
+"播放链接": "href=\"&&\"",
+
+  "搜索url":"https://1cili.net/search?q={wd}",
+  "搜索模式": "1",
+  "搜索数组": "<tr>&&</tr>",
+  "搜索图片": "https://gitee.com/kaisertv/pro/raw/master/public/cl.png",
+  "搜索标题": "class=\"sample\">&&</p>",
+  "搜索副标题": "class=\"td-size\">&&</td>",
+  "搜索链接": "href=\"&&\"",
+  "搜索链接前缀": "https://1cili.com"
+}
