@@ -18,8 +18,8 @@
 {"key": "*AIvin","name": "AIvin","type": 0,"api": "http://lbapiby.com/api.php/provide/vod/at/xml"},  
 {"key": "大大资源","name": "大大资源","type": 1,"api": "https://apidanaizi.com/api.php/provide/vod","searchable": 1,"style": {"type": "rect","ratio": 1.33},"changeable": 1  },
 {"key": "美少女资源","name": "美少女资源","type": 0,"api": "https://www.msnii.com/api/xml.php","searchable": 0,"quickSearch": 0},
-{"key": "大地资源","name": "大地资源","type": 0,"api": "https://dadiapi.com/api.php","searchable": 0,"quickSearch": 0},
-{"key": "香奶儿资源","name": "香奶儿资源","type": 0,"api": "https://www.gdlsp.com/api/xml.php","searchable": 0,"quickSearch": 0},
+{"key": "大地资源","name": "大地资源","type": 0,"api": "https://www.jingpinx.com/api.php/provide/vod","searchable": 0,"quickSearch": 0},
+{"key": "香奶儿资源","name": "香奶儿资源","type": 0,"api": "https://apidanaizi.com/api.php/provide/vod","searchable": 0,"quickSearch": 0},
 
 {"name": "无极┃(xBPQ)","jar":"./app/xBPQ0606.bmp","key":"csp_wjcl01","playerType":1,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/无极磁力xbpq.json"},
 {"key":"*乐播资源","name":"*乐播资源","type":1,"api":"https://lbapi9.com/api.php/provide/vod/","searchable":0,"quickSearch":0},
