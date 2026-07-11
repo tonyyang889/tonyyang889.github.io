@@ -4,10 +4,10 @@
 //https://www.ziyuanzu.com/tag/%E7%B2%BE%E5%93%81
 //jkzyuan.cc（如果无法访问可尝试加上www进行访问）
 //jkunzy.com | jkunzy.cc | jkunzy.vip | jkunzy.live | jkunzy.top
-"主页url": "https://jkunzyapi.com/api.php/provide/vod/?ac=list&ac=detail",
+//"主页url": "https://jkunzyapi.com/api.php/provide/vod/?ac=list&ac=detail",
 "播放请求头": "电脑",
 "热门推荐": "40",
-"首页":"剧集$30",
+"首页":"日本无码$30",
 "倒序": "否",
 
 "数组二次截取": "list\":[&&]}",
@@ -20,8 +20,8 @@
 
 //https://jkunzyapi.com/api.php/provide/vod/?ac=list分类查看
 "分类url": "https://jkunzyapi.com/api.php/provide/vod/?ac=list&ac=detail&t={cateId}&by=hits&pg={catePg};;u0t",
-"分类": "日本无码&日本有码&中文字幕&动漫",
-"分类值": "3&2&1&40",
+"分类": "日本无码&日本有码&中文字幕&黑丝诱惑",
+"分类值": "3&2&1&27",
  
 "搜索url":"https://jkunzyapi.com/api.php/provide/vod?ac=detail&wd={wd}",
 "搜索模式": "1",
