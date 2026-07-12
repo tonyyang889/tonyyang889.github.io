@@ -31,7 +31,7 @@
 //"播放数组":"class=\"scroll-content\">&&class=\"module-heading\">",
 //"播放列表":"<a&&</a>",
 //"播放标题":"<span>&&</span>",
-"跳转播放链接":"id=\"mp4*src=\"&&\"",
+//"跳转播放链接":"id=\"mp4*src=\"&&\"",
 
 "搜索模式": "0",
 "搜索url": "https://hsck60.25img.com/?search2=ndafeoafa&search={wd}",
