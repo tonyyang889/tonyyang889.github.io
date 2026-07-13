@@ -4,6 +4,7 @@
 
 "sites":[
 
+{"name":"danaizi┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_danaizi","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/danaizi.json"},
 {"name":"souav┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_souav","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/souav.json"},
 {"name":"didizy┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_didizy","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/didizy.json"},
 {"name":"xiangjiao┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_xiangjiao","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/xiangjiao.json"},
