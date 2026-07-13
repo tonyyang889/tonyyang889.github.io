@@ -3,6 +3,7 @@
 "wallpaper":"https://www.252035.xyz/imgs/?t=","logo":"https://gitee.com/kaisertv/pro/raw/master/public/ol.jpg",
 
 "sites":[
+{"name":"杏巴资源┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_杏巴资源","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/杏巴资源.json"},
 {"name":"hsck1┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_hsck1","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/hsck1.json"},
 {"name":"thzy┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_thzy","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/thzy.json"},
 {"name":"ckzy┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_ckzy","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/ckzy.json"},
@@ -27,6 +28,7 @@
 
 
 
+{"key": "杏巴资源","name": "杏巴资源","type": 0,"api": "https://xingba222.com/api.php/provide/vod/at/xml","searchable": 1,"quickSearch": 1},
 {"key": "搜AV资源","name": "搜AV资源","type": 0,"api": "https://api.souavzyw.net/api.php/provide/vod/at/xml/","searchable": 1,"quickSearch": 1},
 {"key": "滴滴资源","name": "滴滴资源","type": 0,"api": "https://api.ddapi.cc/api.php/provide/vod/at/xml","searchable": 1,"quickSearch": 1},
 {"key": "豆豆资源","name": "豆豆资源","type": 0,"api": "https://api.douapi.cc/api.php/provide/vod/at/xml","searchable": 1,"quickSearch": 1},
