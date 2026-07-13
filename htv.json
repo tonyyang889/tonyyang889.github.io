@@ -3,7 +3,7 @@
 "wallpaper":"https://www.252035.xyz/imgs/?t=","logo":"https://gitee.com/kaisertv/pro/raw/master/public/ol.jpg",
 
 "sites":[
-
+{"name":"didizy┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_didizy","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/didizy.json"},
 {"name":"xiangjiao┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_xiangjiao","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/xiangjiao.json"},
 {"name":"jkzyuan┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_jkzyuan","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/jkzyuan.json"},
 {"name":"花都┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_XYQHiker_hdys","type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/hdys.json"},
