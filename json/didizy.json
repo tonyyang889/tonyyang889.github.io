@@ -1,0 +1,62 @@
+{
+"作者": "YYH",
+"站名": "滴滴",
+//https://www.zzzypro.com/
+//https://didizy.com/
+//"主页url": "https://api.ddapi.cc/api.php/provide/vod/?ac=list&ac=detail",
+"播放请求头": "电脑",
+"热门推荐": "40",
+"首页":"日本无码$30",
+"倒序": "否",
+
+"数组二次截取": "list\":[&&]}",
+"数组": "{&&}",
+"图片": "vod_pic\":\"&&\"",
+"标题": "vod_name\":\"&&\"",
+//"副标题": "vod_remarks\":\"&&\"",
+"链接": "https://api.ddapi.cc/api.php/provide/vod/?ac=detail&ids=+vod_id\":&&,",
+//https://cj.lziapi.com/api.php/provide/vod/?ac=detail&ids=103756
+
+//https://api.ddapi.cc/api.php/provide/vod/?ac=list分类查看
+"分类url": "https://api.ddapi.cc/api.php/provide/vod/?ac=list&ac=detail&t={cateId}&by=hits&pg={catePg};;u0t",
+"分类": "日本无码&日本有码&中文字幕&麻豆传媒&91制片厂&岛国素人",
+"分类值": "23&24&26&29&30&26",
+ 
+"搜索url":"https://api.ddapi.cc/api.php/provide/vod?ac=detail&wd={wd}",
+"搜索模式": "1",
+"搜索二次截取": "list\":[&&]}",
+"搜索数组": "{&&}",
+"搜索图片": "vod_pic\":\"&&\"",
+"搜索标题": "vod_name\":\"&&\"",
+"搜索副标题": "vod_remarks\":\"&&\"",
+"搜索链接": "https://api.ddapi.cc/api.php/provide/vod/?ac=detail&ids=+vod_id\":&&,",
+
+"影片类型": "影视界", 
+"导演": "vod_director\":\"&&\"",
+"主演": "vod_actor\":\"&&\"",
+"简介": "请勿相信片中广告，以免上当受骗。+vod_blurb\":\"&&\"",
+
+//"调试":"1", 
+"线路二次截取": "vod_play_from\"&&\"vod_play_server[替换::\">>线路数组一 <a#\",>><a> 线路数组二]",
+"线路数组": "线路数组一&&线路数组二",
+"线路标题": "<a&&<a>",
+
+//"线路标题": "$$$&&\"[替换:dyttm3u8>>影视][不包含:线路二]",
+//"线路标题": "<div>&&</div>[替换:dyttm3u8地址>>影视界#dytt地址>>影视界1]",
+
+"播放二次截取": "vod_play_url\"&&\"vod_down_from[替换::\">><a分好类名字一香蕉影视频在线称#\",>>成不成就看这个好不好切换到下一组]",
+"播放数组": "<a&&切换到下一组",
+"播放列表": "分好类&&就看这个",
+"播放标题":"香蕉&&频在",
+"播放链接":"线称&&成不成[包含:m3u8]",
+//"跳转解析": "默认$https://vip.dyttzyplay.com/?url=",
+//"跳转播放链接":"解析+https://vip.dytt-kan.com+const url = \"&&\"",
+//"跳转播放链接前缀":"https://vip.dytt-kan.com",
+//"播放链接前缀": "https://api.ddapi.cc",
+//"播放链接后缀": "",
+
+"免嗅":"0",
+"嗅探词": ".m3u8#m3u8?#.mp4#mp4?#.flv#.m4a",
+
+"筛选":""
+}
