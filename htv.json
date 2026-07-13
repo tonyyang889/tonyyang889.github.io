@@ -22,7 +22,7 @@
 {"name":"PTT┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_ptt","playerType":1,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/ptt.json"},
 //{"name": "JAVDB┃(xBPQ)","jar":"./app/xBPQ0606.bmp","key":"csp_javdb01","playerType":1,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/javdb.json"},
 
-{"key": "*极品资源","name": "极品资源","type": 0,"api": "https://jipinvip1.com/api.php/provide/vod/at/xml","searchable": 1,"quickSearch": 1},  
+{"key": "*极品资源","name": "极品资源","type": 0,"api": "https://jipinvip5.com/api.php/provide/vod/at/xml","searchable": 1,"quickSearch": 1},  
 {"key": "美少女资源","name": "美少女资源","type": 0,"api": "https://www.msnii.com/api/xml.php","searchable": 1,"quickSearch": 1},
 {"key": "杏巴资源","name": "杏巴资源","type": 0,"api": "https://xingba222.com/api.php/provide/vod/at/xml","searchable": 1,"quickSearch": 1},
 {"key": "搜AV资源","name": "搜AV资源","type": 0,"api": "https://api.souavzyw.net/api.php/provide/vod/at/xml/","searchable": 1,"quickSearch": 1},
