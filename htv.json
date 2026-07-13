@@ -3,6 +3,7 @@
 "wallpaper":"https://www.252035.xyz/imgs/?t=","logo":"https://gitee.com/kaisertv/pro/raw/master/public/ol.jpg",
 
 "sites":[
+{"name":"hsck1┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_hsck1","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/hsck1.json"},
 {"name":"thzy┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_thzy","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/thzy.json"},
 {"name":"ckzy┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_ckzy","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/ckzy.json"},
 {"name":"danaizi┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_danaizi","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/danaizi.json"},
@@ -33,7 +34,7 @@
 {"key": "乐播资源","name": "乐播资源","type": 0,"api": "http://lbapiby.com/api.php/provide/vod/at/xml/","searchable": 1,"quickSearch": 1},  
 {"key": "大地资源","name": "大地资源","type": 0,"api": "https://dadiapi.com/api.php","searchable": 1,"quickSearch": 1},
 {"key": "香奶儿资源","name": "香奶儿资源","type": 0,"api": "https://apidanaizi.com/api.php/providedao/vod/at/xml","searchable": 1,"quickSearch": 1},
-{"key": "番茄资源","name": "番茄资源","type": 0,"api": "https://fqzy.me//api.php/provide/vod/?ac=list","searchable": 1,"quickSearch": 1},
+{"key": "hs仓库资源","name": "hs仓库资源","type": 0,"api": "https://hsckzy888.com/api.php/provide/vod/from/hsckyun/at/xml","searchable": 1,"quickSearch": 1},
 {"key": "桃花资源","name": "桃花资源","type": 0,"api": "https://thzy1.me/api.php/provide/vod/at/xml","searchable": 1,"quickSearch": 1},
 {"key": "CK资源","name": "CK资源","type": 0,"api": "https://ckzy.me/api.php/provide/vod/at/xml","searchable": 1,"quickSearch": 1},
   
