@@ -15,9 +15,9 @@
   "搜索列表数组规则": ".table.table-hover&&tr",
   "搜索片单是否Jsoup写法": "1",
   "搜索片单图片": "https://img1.baidu.com/it/u=235588513,2774094053&fm=253&fmt=auto&app=138&f=JPEG?w=414&h=500",
-  "搜索片单标题": "p&&Text",
+  "搜索片单标题": "a&&Text",
   "搜索片单链接": "a&&href",
-  "搜索片单副标题": ".td-size&&Text",
+  //"搜索片单副标题": ".td-size&&Text",
   "搜索片单链接加前缀": "https://1cili.com",
   "搜索片单链接加后缀": "",
   
