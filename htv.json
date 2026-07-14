@@ -16,7 +16,6 @@
 {"name":"xiangjiao┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_xiangjiao","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/xiangjiao.json"},
 {"name":"jkzyuan┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_jkzyuan","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/jkzyuan.json"},
 {"name":"花都┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_XYQHiker_hdys","type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/hdys.json"},
-{"name":"MADOU┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_XYQHiker_MDSP","type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/mdzg.json"},
 {"name":"JAVXX┃(xBPQ)","jar":"./app/xBPQ2508.bmp","playerType": 1,"key": "csp_xBPQ_javxx","type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/javxx.json"},
 {"name":"番好┃(XYQH)","jar":"./app/htv.bmp","key": "csp_XYQHiker_FH","playerType":1,"type":3,"api":"csp_XYQHiker","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/fanhao.json"},
 {"name":"JAVDB┃(XYQH)","jar":"./app/htv.bmp","key": "csp_XYQHiker_JAVDB","type":3,"api":"csp_XYQHiker","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/javdbxyqh.json"},
