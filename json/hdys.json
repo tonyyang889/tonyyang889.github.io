@@ -1,6 +1,7 @@
 {
   "播放请求头": "电脑",
   //abc.hdys.top 、 abc.hdys.xyz
+  //b.hdfby.com , b.hdfby.net , b.hdfby.org
   "热门推荐": "40",
   "倒序": "否",
   "图片代理": "0",
@@ -20,7 +21,7 @@
   "播放链接": "href=\"&&\"",
   "跳转播放链接": "link_pre\"*url\":\"&&\"",
 	
-  "分类url": "https://hd.huaduys.cc/vodshow/{cateId}--------{catePg}---.html",
-  "分类": "无ma&有ma&国产&欧美&动漫",
-  "分类值": "2&1&3&4&5"
+  "分类url": "https://hd26.huadutx.com/index.php/vodshow/{cateId}--------{catePg}---.html",
+  "分类": "无MA&骑兵无MA&有MA&中字&无字&国产&欧美&动漫",
+  "分类值": "8&9&6&1&2&3&4&5"
  }
