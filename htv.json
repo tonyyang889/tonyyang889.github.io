@@ -19,7 +19,6 @@
 {"name":"JAVXX┃(xBPQ)","jar":"./app/xBPQ2508.bmp","playerType": 1,"key": "csp_xBPQ_javxx","type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/javxx.json"},
 {"name":"番好┃(XYQH)","jar":"./app/htv.bmp","key": "csp_XYQHiker_FH","playerType":1,"type":3,"api":"csp_XYQHiker","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/fanhao.json"},
 {"name":"JAVDB┃(XYQH)","jar":"./app/htv.bmp","key": "csp_XYQHiker_JAVDB","type":3,"api":"csp_XYQHiker","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/javdbxyqh.json"},
-{"name":"MAPTWB┃(XYQH)","jar": "./app/xiangl0718.bmp","key": "csp_XYQHiker_maptwyy","playerType": 1,"type":3,"api":"csp_XYQHiker","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/maptw.json"},
 {"name":"HSCK┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_XYQHiker_hsCK","playerType":1,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/hsck.json"},
 {"name":"PTT┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_ptt","playerType":1,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/ptt.json"},
 //{"name": "JAVDB┃(xBPQ)","jar":"./app/xBPQ0606.bmp","key":"csp_javdb01","playerType":1,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/javdb.json"},
