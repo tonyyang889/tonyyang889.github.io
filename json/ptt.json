@@ -1,0 +1,46 @@
+{
+"作者":"YYH",
+"站名":"奇优影院",
+"主页url":"https://ptt.red/zh-cn/",
+"热门推荐": "0",
+"请求头": "电脑",
+"起始页": "1",
+"直接播放": "0",
+"倒序播放": "0",
+"图片代理": "0",
+
+"数组":"class=\"card\">&&class=\'lines lines2\'>",
+"图片":"src=\"&&\"",
+"标题":"alt=\"&&\"",
+"链接":"href=\"&&\"",
+"副标题":"class=\"badge badge-success\">&&</span>",
+
+"搜索url":"https://ptt.red/zh-cn/node/search?title={wd}",
+"搜索模式":"1",
+
+"线路数组":"class=\'fa fa-th\'&&/h3>",
+"线路标题":"</i>&&<",
+//"调试":"1",
+
+"播放数组":"class=\"seqs mb-4\">&&</div>",
+"播放链接":"href=\"&&\"",
+//"跳转播放链接":"解析+allowfullscreen*content.php?vid=&&\"[替换:amp;>>空]",
+//"跳转解析": "默认$http://api.qfffbw.cn:81/m3u8/play.php?vid=",
+"跳转播放链接":"uploadDate\"*contentUrl\":\"&&\"",
+//"二次跳转播放链接":"hls.loadSource(\"&&\")",
+
+"影片年代":"年份：&&</p>",
+"影片地区":"地区：&&<span",
+"影片类型":"类型：&&</a>",
+"导演":"导演：&&<h3",
+"主演":"领衔主演&&</p>",
+"简介":"剧情介绍&&</p>",
+"播放列表":"<a&&/a>",
+"播放标题":">&&<",
+"播放链接":"href=\"&&\"",
+"嗅探词": ".m3u8#video_mp4#tos-#.mp4#cdn.123pan.cn#huoshanvod.com",
+
+"分类url":"https://ptt.red/zh-cn/p/{cateId}?page={catePg}",
+"分类":"电影$1#电视剧$3#动漫$4#综艺$2#短剧$66",
+"筛选":""
+}
