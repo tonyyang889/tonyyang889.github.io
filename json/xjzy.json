@@ -1,0 +1,50 @@
+{
+"作者": "YYH",
+"站名": "danaizi",
+//https://www.zzzypro.com/
+//https://xjimg.cdn-xj.cc/  https://xjzy1.xyz https://xjzy2.xyz https://xjzy3.xyz https://xjzy4.xyz到9
+"主页url": "https://api.xjzyapi.com/provide/vod/?ac=list&ac=detail",
+"播放请求头": "电脑",
+"热门推荐": "40",
+"首页":"日本无码$30",
+"倒序": "否",
+
+"数组二次截取": "list\":[&&]}",
+"数组": "{&&}",
+"跳转图片": "vod_pic_thumb\":\"&&\"",
+"标题": "vod_name\":\"&&\"",
+"副标题": "vod_remarks\":\"&&\"",
+"链接": "https://api.xjzyapi.com/provide/vod/?ac=detail&ids=+vod_id\":&&,",
+
+"分类url": "https://api.xjzyapi.com/provide/vod/?ac=list&ac=detail&t={cateId}&by=hits&pg={catePg};;u0t",
+"分类": "日本无码&日本有码&欧美超清&日本超清&厂牌经典&岛国素人",
+"分类值": "21&22&50&48&26&20",
+ 
+"搜索url":"https://api.xjzyapi.com/provide/vod?ac=detail&wd={wd}",
+"搜索模式": "1",
+"搜索二次截取": "list\":[&&]}",
+"搜索数组": "{&&}",
+"搜索图片": "vod_pic\":\"&&\"",
+"搜索标题": "vod_name\":\"&&\"",
+"搜索副标题": "vod_remarks\":\"&&\"",
+"搜索链接": "https://api.xjzyapi.com/provide/vod/?ac=detail&ids=+vod_id\":&&,",
+
+"影片类型": "影视界", 
+"导演": "vod_director\":\"&&\"",
+"主演": "vod_actor\":\"&&\"",
+"简介": "请勿相信片中广告，以免上当受骗。+vod_blurb\":\"&&\"",
+
+//"调试":"1", 
+"线路数组": "vod_play_from\"&&,",
+"线路标题": ":\"&&\"",
+
+"播放数组": "vod_play_url\"&&\"vod_status[替换::\">><a分好类名字一在线称#\",>>成不成就看这个好不好切换到下一组#$>>这个好东西啊]",
+"播放列表": "<a分好类&&就看这个",
+"播放标题":"在线称&&这个好东",
+"播放链接":"西啊&&成不成",
+
+"免嗅":"0",
+"嗅探词": ".m3u8#m3u8?#.mp4#mp4?#.flv#.m4a",
+
+"筛选":""
+}
