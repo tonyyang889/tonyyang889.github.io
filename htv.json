@@ -7,6 +7,7 @@
 {"key": "*极品资源","name": "极品资源","type": 0,"api": "https://jipinvip5.com/api.php/provide/vod/at/xml","searchable": 1,"quickSearch": 1},  
 {"name":"doudouzy┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_doudouzy","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/doudouzy.json"},
 {"name":"杏巴资源┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_杏巴资源","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/杏巴资源.json"},
+//https://yytv.cc/-https://yytv1.cc/-5
 {"name":"hsck1┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_hsck1","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/hsck1.json"},
 {"name":"thzy┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_thzy","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/thzy.json"},
 {"name":"ckzy┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_ckzy","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/ckzy.json"},
@@ -22,6 +23,7 @@
 {"name":"HSCK┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_XYQHiker_hsCK","playerType":1,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/hsck.json"},
 //{"name": "JAVDB┃(xBPQ)","jar":"./app/xBPQ0606.bmp","key":"csp_javdb01","playerType":1,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/javdb.json"},
 {"name":"PTT┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_ptt","playerType":1,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/ptt.json"},
+
 {"key": "美少女资源","name": "美少女资源","type": 0,"api": "https://www.msnii.com/api/xml.php","searchable": 1,"quickSearch": 1},
 {"key": "杏巴资源","name": "杏巴资源","type": 0,"api": "https://xingba222.com/api.php/provide/vod/at/xml","searchable": 1,"quickSearch": 1},
 {"key": "搜AV资源","name": "搜AV资源","type": 0,"api": "https://api.souavzyw.net/api.php/provide/vod/at/xml/","searchable": 1,"quickSearch": 1},
