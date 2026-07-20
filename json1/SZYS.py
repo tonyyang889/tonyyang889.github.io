@@ -1,4 +1,5 @@
 # 来源：https://github.com/qist/tvbox/blob/master/py/SZYS.py
+# https://zerouhd.com/ 山楂影视
 # -*- coding: utf-8 -*-
 # by @嗷呜
 import json
