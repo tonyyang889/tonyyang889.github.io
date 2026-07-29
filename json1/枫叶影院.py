@@ -1,4 +1,4 @@
-# 来源https://clun.top/box.json  发布页vip1949.com
+# 来源https://clun.top/box.json  发布页vip1949.com vip1949.info
 
 # -*- coding: utf-8 -*-
 import re, urllib.parse
