@@ -1,8 +1,8 @@
 {
 "作者":"YYH",
 "站名":"雪落影视",
-"主页url":"https://v.xl01.eu.cc/",
-//
+"主页url":"https://v.xl.in.ua/",
+//http://www.dyiming.top/ v.xl.in.ua v.xl01.eu.cc v.xl02.eu.cc v.xl01.cc.ua
 "播放请求头": "电脑",
 "首页":"电视剧$30",
 "起始页":"1",
@@ -34,7 +34,7 @@
 
 //"调试":"1",
 
-"搜索url":"https://v.xl01.eu.cc/search/{wd}",
+"搜索url":"https://v.xl.in.ua/search/{wd}",
 "搜索模式": "1",
 "搜索数组": "class=\"card-img\"&&class=\"card-meta\">",
 "搜索图片": "data-src=\"&&\"",
@@ -42,7 +42,7 @@
 "搜索链接": "href=\"&&\"",
 
 "分类":"电视剧$1#电影$0",
-"分类url":"https://v.xl01.eu.cc/s/all/{catePg}?type={cateId}&area=中国大陆&year={year}&order=0",
+"分类url":"https://v.xl.in.ua/s/all/{catePg}?type={cateId}&area=中国大陆&year={year}&order=0",
 "筛选":{
 "0":[
   {"key":"year","name":"年份","value":[
