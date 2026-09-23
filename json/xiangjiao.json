@@ -15,22 +15,22 @@
 "图片": "vod_pic\":\"&&\"",
 "标题": "vod_name\":\"&&\"",
 "副标题": "vod_remarks\":\"&&\"",
-"链接": "https://www.xiangjiaozyw.com/api.php/provide/vod/?ac=detail&ids=+vod_id\":&&,",
+"链接": "https://jkunzyapi.com/api.php/provide/vod/?ac=detail&ids=+vod_id\":&&,",
 //https://cj.lziapi.com/api.php/provide/vod/?ac=detail&ids=103756
 
 //https://www.xiangjiaozyw.com/api.php/provide/vod/?ac=list分类查看
-"分类url": "https://www.xiangjiaozyw.com/api.php/provide/vod/?ac=list&ac=detail&t={cateId}&by=hits&pg={catePg};;u0t",
+"分类url": "https://jkunzyapi.com/api.php/provide/vod/?ac=list&ac=detail&t={cateId}&by=hits&pg={catePg};;u0t",
 "分类": "日本无码&日本有码&中文字幕&黑人&欧美精品&岛国素人",
 "分类值": "7&37&38&32&23&39",
  
-"搜索url":"https://www.xiangjiaozyw.com/api.php/provide/vod?ac=detail&wd={wd}",
+"搜索url":"https://jkunzyapi.com/api.php/provide/vod?ac=detail&wd={wd}",
 "搜索模式": "1",
 "搜索二次截取": "list\":[&&]}",
 "搜索数组": "{&&}",
 "搜索图片": "vod_pic\":\"&&\"",
 "搜索标题": "vod_name\":\"&&\"",
 "搜索副标题": "vod_remarks\":\"&&\"",
-"搜索链接": "https://www.xiangjiaozyw.com/api.php/provide/vod/?ac=detail&ids=+vod_id\":&&,",
+"搜索链接": "https://jkunzyapi.com/api.php/provide/vod/?ac=detail&ids=+vod_id\":&&,",
 
 "影片类型": "影视界", 
 "导演": "vod_director\":\"&&\"",
