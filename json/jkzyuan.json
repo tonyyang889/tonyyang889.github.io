@@ -1,10 +1,10 @@
 {
 "作者": "YYH",
-"站名": "jkzyuan",
-//https://www.ziyuanzu.com/tag/%E7%B2%BE%E5%93%81
-//jkzyuan.cc（如果无法访问可尝试加上www进行访问）
-//jkunzy.com | jkunzy.cc | jkunzy.vip | jkunzy.live | jkunzy.top
+"站名": "jkunzy",
+//主域名：jkunzy.xyz
+//备用域名：jkunzy.com | jkunzy.cc | jkunzy.vip | jkunzy.top
 //"主页url": "https://jkunzyapi.com/api.php/provide/vod/?ac=list&ac=detail",
+
 "播放请求头": "电脑",
 "热门推荐": "40",
 "首页":"日本无码$30",
@@ -20,8 +20,8 @@
 
 //https://jkunzyapi.com/api.php/provide/vod/?ac=list分类查看
 "分类url": "https://jkunzyapi.com/api.php/provide/vod/?ac=list&ac=detail&t={cateId}&by=hits&pg={catePg};;u0t",
-"分类": "日本无码&日本有码&中文字幕&黑丝诱惑",
-"分类值": "3&2&1&27",
+"分类": "日本无码&日本有码&中文字幕&抖阴视频&国产传媒&门事件&三级伦理&SWAG&探花系列&素人搭讪&网红主播&激情动漫",
+"分类值": "3&2&1&38&35&37&33&28&32&36&31&30",
  
 "搜索url":"https://jkunzyapi.com/api.php/provide/vod?ac=detail&wd={wd}",
 "搜索模式": "1",
@@ -53,7 +53,7 @@
 //"跳转解析": "默认$https://vip.dyttzyplay.com/?url=",
 //"跳转播放链接":"解析+https://vip.dytt-kan.com+const url = \"&&\"",
 //"跳转播放链接前缀":"https://vip.dytt-kan.com",
-//"播放链接前缀": "https://jkunzyapi.com",
+//"播放链接前缀": "https://api.ddapi.cc",
 //"播放链接后缀": "",
 
 "免嗅":"0",
