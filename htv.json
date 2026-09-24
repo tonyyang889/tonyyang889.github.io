@@ -3,8 +3,8 @@
 "wallpaper":"https://www.252035.xyz/imgs/?t=","logo":"https://gitee.com/kaisertv/pro/raw/master/public/ol.jpg",
 
 "sites":[
+{"name":"jkzyuan┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_jkzyuan","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/jkzyuan.json"},
 {"key":"155zy.com","name":"♥155(直连)","type":1,"api":"https://155api.com/api.php/provide/vod/?ac=list","searchable":1,"filterable":1},
-{"key":"jkunzy.com","name":"💕jkun(直连)","type":1,"api":"https://jkunzyapi.com/api.php/provide/vod/?ac=list","searchable":1,"filterable":1},
 {"name":"xj┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_小鸡资源zy","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/xjzy.json"},
 {"key": "*极品资源","name": "极品资源","type": 0,"api": "https://jipinvip5.com/api.php/provide/vod/at/xml","searchable": 1,"quickSearch": 1},  
 {"name":"doudouzy┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_doudouzy","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/doudouzy.json"},
@@ -17,7 +17,6 @@
 {"name":"souav┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_souav","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/souav.json"},
 {"name":"didizy┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_didizy","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/didizy.json"},
 {"name":"xiangjiao┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_xiangjiao","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/xiangjiao.json"},
-{"name":"jkzyuan┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_jkzyuan","playerType":2,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/jkzyuan.json"},
 {"name":"花都┃(xBPQ)","jar":"./app/xBPQ1106.bmp","key": "csp_XYQHiker_hdys","type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/hdys.json"},
 {"name":"JAVXX┃(xBPQ)","jar":"./app/xBPQ2508.bmp","playerType": 1,"key": "csp_xBPQ_javxx","type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/javxx.json"},
 {"name":"番好┃(XYQH)","jar":"./app/htv.bmp","key": "csp_XYQHiker_FH","playerType":1,"type":3,"api":"csp_XYQHiker","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/fanhao.json"},
