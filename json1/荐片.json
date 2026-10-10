@@ -14,7 +14,7 @@
 "副标题": "mask\":\"&&\"",
 "链接": "https://wangerniu.cqxkn.com/api/video/detailv2?id=+,\"id\":&&,",
 
-"分类url": "https://wangerniu.cqxkn.com/api/crumb/list?fcate_pid={cateId}&area={area}&year={year}&type=0&sort={by}&page={catePg}&category_id=",
+"分类url": "https://wangerniu.cqxkn.com/api/crumb/list?fcate_pid={cateId}&area={area}&year={year}&type=0&sort=updata&page={catePg}&category_id=",
 "分类": "剧集&电影&综艺&动漫",
 "分类值": "2&1&4&3",
  
