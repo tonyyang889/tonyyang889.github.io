@@ -40,7 +40,7 @@
 {"key": "桃花资源","name": "桃花资源","type": 0,"api": "https://thzy1.me/api.php/provide/vod/at/xml","searchable": 1,"quickSearch": 1},
 {"key": "CK资源","name": "CK资源","type": 0,"api": "https://ckzy.me/api.php/provide/vod/at/xml","searchable": 1,"quickSearch": 1},
 
-{"key":"py_huangguo","name":"黄果短剧┃py","type":3,"api":"https://ysjtv.dedyn.io/json/huangguodj.py,"ext":""},
+{"key":"py_huangguo","name":"黄果短剧┃py","type":3,"type": 3,"api": "https://ysjtv.dedyn.io/json/huangguodj.py","ext": ""},
 {"key":"py_huangguo2","name":"黄果剧场┃py","type":3,"api":"https://ysjtv.dedyn.io/json/黄果剧场.py","ext":""},
 {"key":"py_huangdou","name":"黄豆短剧┃py","type":3,"api":"https://ysjtv.dedyn.io/json/黄豆短剧.py","ext":""},
   
