@@ -1,32 +1,29 @@
-#https://scu.gupuoplgm.cc/-https://scu.vchllzwu.cc/-https://whu.vchllzwu.cc/-https://nju.pqhybuxo.cc/-https://sdu.gupuoplgm.cc/-https://fdu.vchllzwu.cc/-https://sysu.pqhybuxo.cc/-https://hit.pqhybuxo.cc/-https://thu.gupuoplgm.cc/
-#µØÖ··¢²¼Ò³https://huangguoai.pages.dev-https://huang-guo.pages.dev
-#ÓÀ¾ÃµØÖ·https://huangguoai.com-https://huangguoai.ai
-#
-#À´Ô´ https://github.com/cluntop/tvbox/blob/main/fun.json   https://github.com/cluntop/tvbox/blob/main/js/ss/»Æ¹û¾ç³¡.py  
+#åœ°å€å‘å¸ƒé¡µhttps://huangguoai.pages.dev-https://huang-guo.pages.dev
+#æ¥æº https://github.com/cluntop/tvbox/blob/main/fun.json-https://github.com/cluntop/tvbox/blob/main/js/ss/é»„æœå‰§åœº.py  
 
-"""»Æ¹û¾ç³¡ (huangguo.video) Python µã²¥ÅÀ³æ£¨TVBox / Ä¬Ó°ÊÓ£¬Chaquopy£©
+"""é»„æœå‰§åœº (huangguo.video) Python ç‚¹æ’­çˆ¬è™«ï¼ˆTVBox / é»˜å½±è§†ï¼ŒChaquopyï¼‰
 
-Õ¾µã½á¹¹£¨2026-10-04 Êµ²â£©£º
-- ÁĞ±í/·ÖÀà/ËÑË÷£º/videos?category=1|2|3|4&tags=N&rating=N&q=xx&page=N£¬¿¨Æ¬ <article class="video-card">
-- ¶ş¼¶É¸Ñ¡£ºtags£¨1=¶¼ÊĞ/2=ÈËÆŞ/4=Í¬ÈË/5=Ğ£Ô°/6=Ö°³¡/7=¹Å·ç/8=ÂÒÂ×/40=Ğş»Ã£©£¬
-  rating£¨1=°²È«/2=ÂãÂ¶/3=ÏŞÖÆ¼¶£©
-- ×îĞÂ·¢²¼£º/videos£¨²»´ø category£©
-- ÊÓÆµÏêÇé£º/video/xxx£¬²¥·ÅµØÖ·ÔÚ data-hls£¨.../master.m3u8£©£¬º£±¨ÔÚ data-poster
-- Á¬Ğø¾çÏêÇé£º/series/xxx£¬¾ç¼¯ÁĞ±íÔÚ data-episode-list ÇøÓò£¨"µÚN¼¯" + /video/xxx£©
-- ¿¨Æ¬±ÈÀı£ºaspect-[9/16] Êú°æ£¬style ratio °´Õ¾µãÊµ¼ÊÈ¡ 0.56
-- ²¥·ÅÁ´Â·£ºdata-hls ÊÇ master.m3u8£¨º¬ 480p/720p/1080p Èı¸ö variant£¬
-  variant µØÖ·´ø ?n= Ê±¼ä´Á token£©¡£playerContent Àï½âÎö master Ìô×î¸ßÇåÎú¶È variant¡£
+ç«™ç‚¹ç»“æ„ï¼ˆ2026-10-04 å®æµ‹ï¼‰ï¼š
+- åˆ—è¡¨/åˆ†ç±»/æœç´¢ï¼š/videos?category=1|2|3|4&tags=N&rating=N&q=xx&page=Nï¼Œå¡ç‰‡ <article class="video-card">
+- äºŒçº§ç­›é€‰ï¼štagsï¼ˆ1=éƒ½å¸‚/2=äººå¦»/4=åŒäºº/5=æ ¡å›­/6=èŒåœº/7=å¤é£/8=ä¹±ä¼¦/40=ç„å¹»ï¼‰ï¼Œ
+  ratingï¼ˆ1=å®‰å…¨/2=è£¸éœ²/3=é™åˆ¶çº§ï¼‰
+- æœ€æ–°å‘å¸ƒï¼š/videosï¼ˆä¸å¸¦ categoryï¼‰
+- è§†é¢‘è¯¦æƒ…ï¼š/video/xxxï¼Œæ’­æ”¾åœ°å€åœ¨ data-hlsï¼ˆ.../master.m3u8ï¼‰ï¼Œæµ·æŠ¥åœ¨ data-poster
+- è¿ç»­å‰§è¯¦æƒ…ï¼š/series/xxxï¼Œå‰§é›†åˆ—è¡¨åœ¨ data-episode-list åŒºåŸŸï¼ˆ"ç¬¬Né›†" + /video/xxxï¼‰
+- å¡ç‰‡æ¯”ä¾‹ï¼šaspect-[9/16] ç«–ç‰ˆï¼Œstyle ratio æŒ‰ç«™ç‚¹å®é™…å– 0.56
+- æ’­æ”¾é“¾è·¯ï¼šdata-hls æ˜¯ master.m3u8ï¼ˆå« 480p/720p/1080p ä¸‰ä¸ª variantï¼Œ
+  variant åœ°å€å¸¦ ?n= æ—¶é—´æˆ³ tokenï¼‰ã€‚playerContent é‡Œè§£æ master æŒ‘æœ€é«˜æ¸…æ™°åº¦ variantã€‚
 
-ÍøÂç²ã£ºHTML Ò³ÃæÓÃ requests.Session + Chrome TLS Ö¸ÎÆ£¨TLS1.2 ÃÜÂëÌ×¼ş + X25519 ÇúÏß£¬
-ÈÆ¹ı Cloudflare 1020 °´Ö¸ÎÆÀ¹½Ø£©£»m3u8 µÈ¾²Ì¬×ÊÔ´ÓÃÂã requests£¨´øÎÄµµÍ··´¶ø 403£©£»
-µ¥´ÎÇëÇó 10s ³¬Ê±¡¢Ê§°ÜÖØÊÔ 1 ´Î¡£ÏêÇéÒ³Á¬Ğø¾ç²»Öğ¼¯×¥ HLS£¨N+1 ¸ÄÎª 1+²¥·ÅÊ±½âÎö£©¡£
-ÒÀÀµ½öÏŞ requirements.txt °×Ãûµ¥£¨requests ÎªÖ÷£©¡£
+ç½‘ç»œå±‚ï¼šHTML é¡µé¢ç”¨ requests.Session + Chrome TLS æŒ‡çº¹ï¼ˆTLS1.2 å¯†ç å¥—ä»¶ + X25519 æ›²çº¿ï¼Œ
+ç»•è¿‡ Cloudflare 1020 æŒ‰æŒ‡çº¹æ‹¦æˆªï¼‰ï¼›m3u8 ç­‰é™æ€èµ„æºç”¨è£¸ requestsï¼ˆå¸¦æ–‡æ¡£å¤´åè€Œ 403ï¼‰ï¼›
+å•æ¬¡è¯·æ±‚ 10s è¶…æ—¶ã€å¤±è´¥é‡è¯• 1 æ¬¡ã€‚è¯¦æƒ…é¡µè¿ç»­å‰§ä¸é€é›†æŠ“ HLSï¼ˆN+1 æ”¹ä¸º 1+æ’­æ”¾æ—¶è§£æï¼‰ã€‚
+ä¾èµ–ä»…é™ requirements.txt ç™½åå•ï¼ˆrequests ä¸ºä¸»ï¼‰ã€‚
 
-ÅäÖÃÊ¾Àı£¨·Å½ø TVBox Ö÷ÅäÖÃ "sites" Êı×é£¬°Ñ±¾ÎÄ¼ş·Åµ½ ./vod/ Ä¿Â¼£©£º
+é…ç½®ç¤ºä¾‹ï¼ˆæ”¾è¿› TVBox ä¸»é…ç½® "sites" æ•°ç»„ï¼ŒæŠŠæœ¬æ–‡ä»¶æ”¾åˆ° ./vod/ ç›®å½•ï¼‰ï¼š
 [
   {
     "key": "huangguo",
-    "name": "»Æ¹û¾ç³¡",
+    "name": "é»„æœå‰§åœº",
     "type": 3,
     "api": "./vod/huangguo_spider.py",
     "lang": "zh-CN",
@@ -55,48 +52,48 @@ except Exception:
 
 try:
     from base.spider import Spider as BaseSpider
-except Exception:  # ¶ÀÁ¢ÔËĞĞ£¨±¾»úĞ£Ñé£©Ê±¶µµ×
+except Exception:  # ç‹¬ç«‹è¿è¡Œï¼ˆæœ¬æœºæ ¡éªŒï¼‰æ—¶å…œåº•
     BaseSpider = object
 
 BASE = "https://huangguo.video"
 PAGE_SIZE = 20
-# µÚÒ»¸öÀ¸Ä¿ = ×îĞÂ·¢²¼£¨Ó³Éäµ½ /videos ²»´ø category£©
+# ç¬¬ä¸€ä¸ªæ ç›® = æœ€æ–°å‘å¸ƒï¼ˆæ˜ å°„åˆ° /videos ä¸å¸¦ categoryï¼‰
 CATEGORIES = [
-    {"type_id": "latest", "type_name": "×îĞÂ·¢²¼"},
-    {"type_id": "1", "type_name": "MVÒôÀÖ¾ç"},
-    {"type_id": "2", "type_name": "¶ÌÆ¬"},
-    {"type_id": "3", "type_name": "Á¬Ğø¾ç"},
-    {"type_id": "4", "type_name": "Æ¬¶Î"},
+    {"type_id": "latest", "type_name": "æœ€æ–°å‘å¸ƒ"},
+    {"type_id": "1", "type_name": "MVéŸ³ä¹å‰§"},
+    {"type_id": "2", "type_name": "çŸ­ç‰‡"},
+    {"type_id": "3", "type_name": "è¿ç»­å‰§"},
+    {"type_id": "4", "type_name": "ç‰‡æ®µ"},
 ]
-# ¶ş¼¶É¸Ñ¡£¨2026-10-04 Êµ²â£º¸÷·ÖÀàÇé½Ú±êÇ©¸÷²»ÏàÍ¬£»latest È¡ 16 ±êÇ©²¢¼¯£©
-# ³ß¶È·Ö¼¶°´ÓÃ»§ÒªÇóÄ¬ÈÏÈ«²¿£¬²»×öÉ¸Ñ¡
-# ±êÇ©°´Ã¿ĞĞ 4 ¸ö²ğ³É¶à¸öÉ¸Ñ¡Î¬¶È£ºApp Ã¿¸öÎ¬¶È¶ÀÕ¼Ò»ĞĞ£¬³¬ÆÁ±êÇ©×ÔÈ»»»ĞĞ£¬ÎŞĞèºá»¬
+# äºŒçº§ç­›é€‰ï¼ˆ2026-10-04 å®æµ‹ï¼šå„åˆ†ç±»æƒ…èŠ‚æ ‡ç­¾å„ä¸ç›¸åŒï¼›latest å– 16 æ ‡ç­¾å¹¶é›†ï¼‰
+# å°ºåº¦åˆ†çº§æŒ‰ç”¨æˆ·è¦æ±‚é»˜è®¤å…¨éƒ¨ï¼Œä¸åšç­›é€‰
+# æ ‡ç­¾æŒ‰æ¯è¡Œ 4 ä¸ªæ‹†æˆå¤šä¸ªç­›é€‰ç»´åº¦ï¼šApp æ¯ä¸ªç»´åº¦ç‹¬å ä¸€è¡Œï¼Œè¶…å±æ ‡ç­¾è‡ªç„¶æ¢è¡Œï¼Œæ— éœ€æ¨ªæ»‘
 _TAGS_BY_CAT = {
-    "latest": [("¶¼ÊĞ", "1"), ("ÈËÆŞ", "2"), ("ÑÜÉú", "3"), ("Í¬ÈË", "4"),
-               ("Ğ£Ô°", "5"), ("Ö°³¡", "6"), ("¹Å·ç", "7"), ("ÂÒÂ×", "8"),
-               ("NTR", "9"), ("´©Ô½", "39"), ("Ğş»Ã", "40"), ("Â¶³ö", "42"),
-               ("Å®Í¬", "55"), ("ÄĞÍ¬", "56"), ("Å·ÃÀ", "57"), ("¶ş´ÎÔª", "59")],
-    "1": [("¶¼ÊĞ", "1"), ("ÈËÆŞ", "2"), ("Ğ£Ô°", "5"), ("Ö°³¡", "6"),
-          ("NTR", "9"), ("Â¶³ö", "42"), ("Å·ÃÀ", "57")],
-    "2": [("¶¼ÊĞ", "1"), ("ÈËÆŞ", "2"), ("Í¬ÈË", "4"), ("Ğ£Ô°", "5"),
-          ("Ö°³¡", "6"), ("¹Å·ç", "7"), ("ÂÒÂ×", "8"), ("NTR", "9"),
-          ("´©Ô½", "39"), ("Ğş»Ã", "40"), ("Å®Í¬", "55"), ("ÄĞÍ¬", "56"),
-          ("Å·ÃÀ", "57"), ("¶ş´ÎÔª", "59")],
-    "3": [("¶¼ÊĞ", "1"), ("ÈËÆŞ", "2"), ("ÑÜÉú", "3"), ("Í¬ÈË", "4"),
-          ("Ğ£Ô°", "5"), ("Ö°³¡", "6"), ("¹Å·ç", "7"), ("ÂÒÂ×", "8"),
-          ("NTR", "9"), ("´©Ô½", "39"), ("Ğş»Ã", "40"), ("Å®Í¬", "55"),
-          ("ÄĞÍ¬", "56"), ("Å·ÃÀ", "57"), ("¶ş´ÎÔª", "59")],
-    "4": [("¶¼ÊĞ", "1"), ("ÈËÆŞ", "2"), ("Ğ£Ô°", "5"), ("Ö°³¡", "6"),
-          ("¹Å·ç", "7"), ("ÂÒÂ×", "8"), ("¶ş´ÎÔª", "59")],
+    "latest": [("éƒ½å¸‚", "1"), ("äººå¦»", "2"), ("è¡ç”Ÿ", "3"), ("åŒäºº", "4"),
+               ("æ ¡å›­", "5"), ("èŒåœº", "6"), ("å¤é£", "7"), ("ä¹±ä¼¦", "8"),
+               ("NTR", "9"), ("ç©¿è¶Š", "39"), ("ç„å¹»", "40"), ("éœ²å‡º", "42"),
+               ("å¥³åŒ", "55"), ("ç”·åŒ", "56"), ("æ¬§ç¾", "57"), ("äºŒæ¬¡å…ƒ", "59")],
+    "1": [("éƒ½å¸‚", "1"), ("äººå¦»", "2"), ("æ ¡å›­", "5"), ("èŒåœº", "6"),
+          ("NTR", "9"), ("éœ²å‡º", "42"), ("æ¬§ç¾", "57")],
+    "2": [("éƒ½å¸‚", "1"), ("äººå¦»", "2"), ("åŒäºº", "4"), ("æ ¡å›­", "5"),
+          ("èŒåœº", "6"), ("å¤é£", "7"), ("ä¹±ä¼¦", "8"), ("NTR", "9"),
+          ("ç©¿è¶Š", "39"), ("ç„å¹»", "40"), ("å¥³åŒ", "55"), ("ç”·åŒ", "56"),
+          ("æ¬§ç¾", "57"), ("äºŒæ¬¡å…ƒ", "59")],
+    "3": [("éƒ½å¸‚", "1"), ("äººå¦»", "2"), ("è¡ç”Ÿ", "3"), ("åŒäºº", "4"),
+          ("æ ¡å›­", "5"), ("èŒåœº", "6"), ("å¤é£", "7"), ("ä¹±ä¼¦", "8"),
+          ("NTR", "9"), ("ç©¿è¶Š", "39"), ("ç„å¹»", "40"), ("å¥³åŒ", "55"),
+          ("ç”·åŒ", "56"), ("æ¬§ç¾", "57"), ("äºŒæ¬¡å…ƒ", "59")],
+    "4": [("éƒ½å¸‚", "1"), ("äººå¦»", "2"), ("æ ¡å›­", "5"), ("èŒåœº", "6"),
+          ("å¤é£", "7"), ("ä¹±ä¼¦", "8"), ("äºŒæ¬¡å…ƒ", "59")],
 }
-_SORTS = [("×îĞÂ·¢²¼", "newest"), ("×î¶à²¥·Å", "views"), ("×î¶àÊÕ²Ø", "favorites")]
-_TAG_KEYS = ["tags", "tags2", "tags3", "tags4"]  # ¶àĞĞ±êÇ©Î¬¶È key£¬ºóĞĞ¸²¸ÇÇ°ĞĞ
+_SORTS = [("æœ€æ–°å‘å¸ƒ", "newest"), ("æœ€å¤šæ’­æ”¾", "views"), ("æœ€å¤šæ”¶è—", "favorites")]
+_TAG_KEYS = ["tags", "tags2", "tags3", "tags4"]  # å¤šè¡Œæ ‡ç­¾ç»´åº¦ keyï¼Œåè¡Œè¦†ç›–å‰è¡Œ
 
 def _chunk(lst, n):
     return [lst[i:i + n] for i in range(0, len(lst), n)]
 
 def _chunk_smart(tags):
-    """°´ÓÃ»§¹æÔò·ÖĞĞ£ºÃ¿ĞĞ4¸ö±êÇ©£»×îºóÊ£Óà¡Ü5¸ö·ÅÒ»ĞĞ£»Ê£Óà6¸ö²ğ4+2£¨²»Áô1¸ö¹Â¶ù£©¡£"""
+    """æŒ‰ç”¨æˆ·è§„åˆ™åˆ†è¡Œï¼šæ¯è¡Œ4ä¸ªæ ‡ç­¾ï¼›æœ€åå‰©ä½™â‰¤5ä¸ªæ”¾ä¸€è¡Œï¼›å‰©ä½™6ä¸ªæ‹†4+2ï¼ˆä¸ç•™1ä¸ªå­¤å„¿ï¼‰ã€‚"""
     rows = []
     i, n = 0, len(tags)
     while i < n:
@@ -115,17 +112,17 @@ def _chunk_smart(tags):
 FILTERS = {}
 for _tid, _tags in _TAGS_BY_CAT.items():
     _dims = []
-    # ±êÇ©¶àÑ¡£¨App µãÒÑÑ¡ÖĞ¿ÉÔÙµãÈ¡Ïû£¬²»Ñ¡¼´È«²¿£¬¹Ê²»ĞèÒª"È«²¿"Ñ¡Ïî£©
-    # ·ÖĞĞ¹æÔò£ºÃ¿ĞĞ4¸ö£»×îºóÊ£Óà¡Ü5¸ö·ÅÒ»ĞĞ£»Ê£Óà6¸ö²ğ4+2£¨²»Áô1¸ö¹Â¶ù£©
+    # æ ‡ç­¾å¤šé€‰ï¼ˆApp ç‚¹å·²é€‰ä¸­å¯å†ç‚¹å–æ¶ˆï¼Œä¸é€‰å³å…¨éƒ¨ï¼Œæ•…ä¸éœ€è¦"å…¨éƒ¨"é€‰é¡¹ï¼‰
+    # åˆ†è¡Œè§„åˆ™ï¼šæ¯è¡Œ4ä¸ªï¼›æœ€åå‰©ä½™â‰¤5ä¸ªæ”¾ä¸€è¡Œï¼›å‰©ä½™6ä¸ªæ‹†4+2ï¼ˆä¸ç•™1ä¸ªå­¤å„¿ï¼‰
     _rows = _chunk_smart(_tags)
     for _i, _ck in enumerate(_rows):
         _dims.append({
             "key": _TAG_KEYS[_i] if _i < len(_TAG_KEYS) else "tags%d" % (_i + 1),
-            "name": "Çé½Ú±êÇ©",
+            "name": "æƒ…èŠ‚æ ‡ç­¾",
             "value": [{"n": n, "v": v} for n, v in _ck],
         })
     _dims.append({
-        "key": "sort", "name": "ÅÅĞò",
+        "key": "sort", "name": "æ’åº",
         "value": [{"n": n, "v": v} for n, v in _SORTS],
     })
     FILTERS[_tid] = _dims
@@ -134,7 +131,7 @@ USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
 )
-# Cloudflare ¶Ô HTML ÎÄµµ°´ TLS Ö¸ÎÆÀ¹½Ø£¨1020£©£ºChrome 12 ÃÜÂëÌ×¼ş + ECDH ÇúÏß×é
+# Cloudflare å¯¹ HTML æ–‡æ¡£æŒ‰ TLS æŒ‡çº¹æ‹¦æˆªï¼ˆ1020ï¼‰ï¼šChrome 12 å¯†ç å¥—ä»¶ + ECDH æ›²çº¿ç»„
 CHROME_TLS12_CIPHERS = (
     "ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:"
     "ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:"
@@ -154,7 +151,7 @@ DESC_RE = re.compile(r'<meta name="description" content="([^"]*)"')
 OGIMG_RE = re.compile(r'<meta property="og:image" content="([^"]*)"')
 POSTER_RE = re.compile(r'data-poster="([^"]*)"')
 HLS_RE = re.compile(r'data-hls="([^"]*)"')
-TOTAL_RE = re.compile(r'(\d+)\s*¼¯')
+TOTAL_RE = re.compile(r'(\d+)\s*é›†')
 PAGER_RE = re.compile(r'href="[^"]*page=(\d+)"[^>]*>\s*(\d+)\s*<')
 ANCHOR_RE = re.compile(r'<a[^>]+href="/video/([a-z0-9]+)"[\s\S]*?</a>')
 STREAM_RE = re.compile(r'#EXT-X-STREAM-INF[^\n]*')
@@ -183,9 +180,9 @@ class Spider(BaseSpider):
         self._gw = None
 
     def getName(self):
-        return "»Æ¹û¾ç³¡"
+        return "é»„æœå‰§åœº"
 
-    # ---------------- ÍøÂç²ã£ºrequests + Chrome TLS Ö¸ÎÆ£¨CF 1020 ÈÆ¹ı£©£¬fetch ¶µµ× ----------------
+    # ---------------- ç½‘ç»œå±‚ï¼šrequests + Chrome TLS æŒ‡çº¹ï¼ˆCF 1020 ç»•è¿‡ï¼‰ï¼Œfetch å…œåº• ----------------
     def _build_session(self):
         if requests is None:
             return None
@@ -229,7 +226,7 @@ class Spider(BaseSpider):
         return self._sess
 
     def _get_bare(self):
-        # ÂãÇëÇó×¨ÓÃ Session£º½ö UA Ä¬ÈÏÍ·£¨m3u8/ts ´øÎÄµµÍ· 403£©+ keep-alive ¸´ÓÃÁ¬½ÓÌáËÙ
+        # è£¸è¯·æ±‚ä¸“ç”¨ Sessionï¼šä»… UA é»˜è®¤å¤´ï¼ˆm3u8/ts å¸¦æ–‡æ¡£å¤´ 403ï¼‰+ keep-alive å¤ç”¨è¿æ¥æé€Ÿ
         if getattr(self, "_bsess", None) is not None:
             return self._bsess
         if requests is None:
@@ -281,7 +278,7 @@ class Spider(BaseSpider):
 
     @staticmethod
     def _neutral_headers(referer=None):
-        """ÖĞºÍÖ¸ÎÆ session Ä¬ÈÏÎÄµµÍ·£¨Sec-Fetch/UA-CH »áÁî m3u8 403£©£¬None=É¾³ı"""
+        """ä¸­å’ŒæŒ‡çº¹ session é»˜è®¤æ–‡æ¡£å¤´ï¼ˆSec-Fetch/UA-CH ä¼šä»¤ m3u8 403ï¼‰ï¼ŒNone=åˆ é™¤"""
         h = {"Accept": "*/*"}
         if referer:
             h["Referer"] = referer
@@ -292,7 +289,7 @@ class Spider(BaseSpider):
         return h
 
     def _fetch_plain(self, url, referer=None, timeout=10):
-        """ÇáÁ¿ GET£ºÂã Session£¨keep-alive ÌáËÙ£©ÓÅÏÈ£¬»ØÍËÖ¸ÎÆÖĞºÍÍ·¡¢¿Ç fetch¡¢urllib¡£"""
+        """è½»é‡ GETï¼šè£¸ Sessionï¼ˆkeep-alive æé€Ÿï¼‰ä¼˜å…ˆï¼Œå›é€€æŒ‡çº¹ä¸­å’Œå¤´ã€å£³ fetchã€urllibã€‚"""
         h = {"User-Agent": USER_AGENT}
         if referer:
             h["Referer"] = referer
@@ -332,7 +329,7 @@ class Spider(BaseSpider):
         return self._ul_get(url, h, timeout)
 
     def _get(self, url, referer=None, timeout=10, retries=1):
-        """Í¬²½ GET ÎÄ±¾£ºÖ¸ÎÆ Session ¡ú ¿Ç fetch ¡ú ±ê×¼¿â urllib Èı¼¶¶µµ×¡£"""
+        """åŒæ­¥ GET æ–‡æœ¬ï¼šæŒ‡çº¹ Session â†’ å£³ fetch â†’ æ ‡å‡†åº“ urllib ä¸‰çº§å…œåº•ã€‚"""
         headers = {}
         if referer:
             headers["Referer"] = referer
@@ -385,7 +382,7 @@ class Spider(BaseSpider):
         return txt
 
     def _pick_variant(self, master_url, want=0):
-        """½âÎö master.m3u8£¬Ìô variant£¨want>0 Ê±ÓÅÏÈ¸Ã¸ß¶È£¬·ñÔò×î¸ß£©£»Ê§°Ü»ØÍË master¡£"""
+        """è§£æ master.m3u8ï¼ŒæŒ‘ variantï¼ˆwant>0 æ—¶ä¼˜å…ˆè¯¥é«˜åº¦ï¼Œå¦åˆ™æœ€é«˜ï¼‰ï¼›å¤±è´¥å›é€€ masterã€‚"""
         txt = self._get_master(master_url)
         if not txt or "#EXT-X-STREAM-INF" not in txt:
             return master_url
@@ -426,7 +423,7 @@ class Spider(BaseSpider):
         return base_dir + uri
 
     def _list_variants(self, master_url):
-        """·µ»Ø master È«²¿ variant [(height, uri)]£¬¹©¶àÏßÂ·"""
+        """è¿”å› master å…¨éƒ¨ variant [(height, uri)]ï¼Œä¾›å¤šçº¿è·¯"""
         out = []
         txt = self._get_master(master_url)
         if not txt or "#EXT-X-STREAM-INF" not in txt:
@@ -454,7 +451,7 @@ class Spider(BaseSpider):
         return out
 
     def homeContent(self, filter):
-        # Áù¿ÇÆõÔ¼£ºclass + list + filters£¨Ê×Ò³Ğè´øÍÆ¼öÁĞ±í£¬·ñÔò¿ÇÊ×Ò³¿Õ°×£©
+        # å…­å£³å¥‘çº¦ï¼šclass + list + filtersï¼ˆé¦–é¡µéœ€å¸¦æ¨èåˆ—è¡¨ï¼Œå¦åˆ™å£³é¦–é¡µç©ºç™½ï¼‰
         result = {"class": list(CATEGORIES), "filters": dict(FILTERS), "list": []}
         try:
             result["list"] = self.homeVideoContent().get("list") or []
@@ -463,7 +460,7 @@ class Spider(BaseSpider):
         return result
 
     def homeVideoContent(self):
-        # ÍÆ¼ö = ×îĞÂ·¢²¼ÁĞ±í£¨²»ÔÙÖÃ¿Õ£©
+        # æ¨è = æœ€æ–°å‘å¸ƒåˆ—è¡¨ï¼ˆä¸å†ç½®ç©ºï¼‰
         try:
             return {"list": self._list("latest", 1, "", {}).get("list") or []}
         except Exception:
@@ -475,19 +472,19 @@ class Spider(BaseSpider):
             ret = self._list(str(tid), pg, "", extend)
             if not ret.get("list"):
                 err = str(getattr(self, "_last_err", "") or "")
-                ret["msg"] = ("¼ÓÔØÊ§°Ü£º" + err) if err else "ÔİÎŞÊı¾İ"
+                ret["msg"] = ("åŠ è½½å¤±è´¥ï¼š" + err) if err else "æš‚æ— æ•°æ®"
             return ret
         except Exception as e:
             return {
                 "list": [], "page": 1, "pagecount": 1, "limit": PAGE_SIZE,
-                "total": 0, "msg": "·ÖÀà¼ÓÔØÊ§°Ü£º" + type(e).__name__,
+                "total": 0, "msg": "åˆ†ç±»åŠ è½½å¤±è´¥ï¼š" + type(e).__name__,
             }
 
     def searchContent(self, key, quick, pg="1"):
         del quick
         try:
-            # È«Õ¾ËÑË÷£ºÕ¾µãÊµ¼ÊËÑË÷µØÖ· /search?q=£¨/videos?q= ²»ÊÇÕæËÑË÷£©
-            # Õ¾µãÒªÇóÖÁÉÙ 2 ¸ö×Ö·û£¬µ¥×Ö¹Ø¼ü´Ê²¹Ê××ÖÖØ¸´´Õ¹»³¤¶È
+            # å…¨ç«™æœç´¢ï¼šç«™ç‚¹å®é™…æœç´¢åœ°å€ /search?q=ï¼ˆ/videos?q= ä¸æ˜¯çœŸæœç´¢ï¼‰
+            # ç«™ç‚¹è¦æ±‚è‡³å°‘ 2 ä¸ªå­—ç¬¦ï¼Œå•å­—å…³é”®è¯è¡¥é¦–å­—é‡å¤å‡‘å¤Ÿé•¿åº¦
             kw = str(key or "").strip()
             if kw and len(kw) < 2:
                 kw = kw + kw[0]
@@ -502,7 +499,7 @@ class Spider(BaseSpider):
         except Exception as e:
             return {
                 "list": [], "page": 1, "pagecount": 1, "limit": PAGE_SIZE,
-                "total": 0, "msg": "ËÑË÷Ê§°Ü£º" + type(e).__name__,
+                "total": 0, "msg": "æœç´¢å¤±è´¥ï¼š" + type(e).__name__,
             }
 
     def _build_url(self, cat, pg, keyword, extend=None):
@@ -512,8 +509,8 @@ class Spider(BaseSpider):
         else:
             url = "%s/videos?category=%s" % (BASE, quote(cat))
         params = []
-        # ¶àĞĞ±êÇ©¶àÑ¡£ººÏ²¢ËùÓĞĞĞµÄ·Ç¿ÕÑ¡Ôñ£¬¶ººÅ·Ö¸ô£¨ÍøÕ¾Ô­Éú¶àÑ¡£¬ĞèÍ¬Ê±Âú×ã£©
-        # ĞĞ1µÄ"È«²¿"½ö±íÊ¾±¾ĞĞÎ´Ñ¡£¬²»Ó°ÏìÆäËûĞĞ
+        # å¤šè¡Œæ ‡ç­¾å¤šé€‰ï¼šåˆå¹¶æ‰€æœ‰è¡Œçš„éç©ºé€‰æ‹©ï¼Œé€—å·åˆ†éš”ï¼ˆç½‘ç«™åŸç”Ÿå¤šé€‰ï¼Œéœ€åŒæ—¶æ»¡è¶³ï¼‰
+        # è¡Œ1çš„"å…¨éƒ¨"ä»…è¡¨ç¤ºæœ¬è¡Œæœªé€‰ï¼Œä¸å½±å“å…¶ä»–è¡Œ
         tag_vals = []
         for k in _TAG_KEYS:
             v = str(extend.get(k, "") or "").strip()
@@ -558,8 +555,8 @@ class Spider(BaseSpider):
 
     @staticmethod
     def _clean(text):
-        # P2£ºÆ¬Ãû/¼¯ÃûÀïµÄ $ # È«½Ç»¯£¬±ÜÃâÓë·Ö¸ô·û³åÍ»
-        return str(text or "").replace("$", "¡ç").replace("#", "££").strip()
+        # P2ï¼šç‰‡å/é›†åé‡Œçš„ $ # å…¨è§’åŒ–ï¼Œé¿å…ä¸åˆ†éš”ç¬¦å†²çª
+        return str(text or "").replace("$", "ï¼„").replace("#", "ï¼ƒ").strip()
 
     def _parse_card(self, block):
         href_m = HREF_RE.search(block)
@@ -581,8 +578,8 @@ class Spider(BaseSpider):
             "vod_pic": pic,
             "vod_remarks": remark or "/".join(tags),
             "vod_class": "/".join(tags),
-            "vod_type": "Á¬Ğø¾ç" if kind == "series" else "ÊÓÆµ",
-            # Õ¾µã¿¨Æ¬Êµ¼ÊÎª 9/16 Êú°æ£¬°´ÍøÕ¾Êµ¼ÊÈ¡ 0.56£¨P10 ÒâÍ¼£º±ÈÀıÕıÈ·²»»û±ä£©
+            "vod_type": "è¿ç»­å‰§" if kind == "series" else "è§†é¢‘",
+            # ç«™ç‚¹å¡ç‰‡å®é™…ä¸º 9/16 ç«–ç‰ˆï¼ŒæŒ‰ç½‘ç«™å®é™…å– 0.56ï¼ˆP10 æ„å›¾ï¼šæ¯”ä¾‹æ­£ç¡®ä¸ç•¸å˜ï¼‰
             "style": {"type": "rect", "ratio": 0.56},
         }
 
@@ -591,7 +588,7 @@ class Spider(BaseSpider):
         return max(1, max(pages)) if pages else 1
 
     def detailContent(self, ids):
-        # P1£º±éÀú ids£¬²»½Ø¶Ï
+        # P1ï¼šéå† idsï¼Œä¸æˆªæ–­
         items = []
         for ident in ids or []:
             try:
@@ -601,10 +598,10 @@ class Spider(BaseSpider):
             except Exception:
                 continue
         if not items:
-            return {"list": [], "msg": "ÏêÇé¼ÓÔØÊ§°Ü"}
+            return {"list": [], "msg": "è¯¦æƒ…åŠ è½½å¤±è´¥"}
         return {"list": items}
 
-    # Õ¾µã master ¹Ì¶¨ÈıµµÇåÎú¶È£¨Êµ²â 480p/720p/1080p£©£¬°´µµÎ»Êä³ö¶àÏßÂ·
+    # ç«™ç‚¹ master å›ºå®šä¸‰æ¡£æ¸…æ™°åº¦ï¼ˆå®æµ‹ 480p/720p/1080pï¼‰ï¼ŒæŒ‰æ¡£ä½è¾“å‡ºå¤šçº¿è·¯
     _QUALITIES = [(1080, "1080P"), (720, "720P"), (480, "480P")]
 
     @staticmethod
@@ -619,7 +616,7 @@ class Spider(BaseSpider):
         return 0, play_id
 
     def _detail_lines(self, item, eps):
-        # eps: [(label, target)]£¬°´ _QUALITIES Õ¹¿ªÎª¶àÏßÂ·£¨$$$ ·Ö¸ô£©
+        # eps: [(label, target)]ï¼ŒæŒ‰ _QUALITIES å±•å¼€ä¸ºå¤šçº¿è·¯ï¼ˆ$$$ åˆ†éš”ï¼‰
         froms, plays = [], []
         for q, name in self._QUALITIES:
             froms.append(name)
@@ -637,7 +634,7 @@ class Spider(BaseSpider):
             "vod_id": ident,
             "vod_name": "",
             "vod_pic": "",
-            "vod_play_from": "»Æ¹û¾ç³¡",
+            "vod_play_from": "é»„æœå‰§åœº",
             "vod_play_url": "",
         }
         if kind == "series":
@@ -648,7 +645,7 @@ class Spider(BaseSpider):
                 self._first(OGIMG_RE, text) or self._first(POSTER_RE, text)
             )
             item["vod_content"] = self._first(DESC_RE, text) or ""
-            # ¾ç¼¯Ö»Æ´ /video/{code}£¬HLS ½âÎöºóÒÆµ½ playerContent£¨ÏêÇé 1 ´ÎÇëÇó£¬²»ÔÙ N+1£©
+            # å‰§é›†åªæ‹¼ /video/{code}ï¼ŒHLS è§£æåç§»åˆ° playerContentï¼ˆè¯¦æƒ… 1 æ¬¡è¯·æ±‚ï¼Œä¸å† N+1ï¼‰
             ep_area = text
             m_area = re.search(r'data-episode-list[\s\S]*', text)
             if m_area:
@@ -662,17 +659,17 @@ class Spider(BaseSpider):
                     continue
                 seen.add(ep_code)
                 inner = am.group(0)
-                lm = re.search(r'µÚ\s*\d+\s*[¼¯»°]|ÕıÆ¬|Ô¤¸æ', inner)
-                label = self._clean(lm.group(0).replace(" ", "")) if lm else ("µÚ%d¼¯" % (idx + 1))
+                lm = re.search(r'ç¬¬\s*\d+\s*[é›†è¯]|æ­£ç‰‡|é¢„å‘Š', inner)
+                label = self._clean(lm.group(0).replace(" ", "")) if lm else ("ç¬¬%dé›†" % (idx + 1))
                 idx += 1
                 urls.append((label, "/video/" + ep_code))
             total_m = TOTAL_RE.search(text)
             if total_m:
-                item["vod_remark"] = "È«%s¼¯" % total_m.group(1)
-            # Õ¾µã¾ç¼¯Çø°´×îĞÂÔÚÇ°£¨µÚ9¡úµÚ1£©£¬Ñ¡¼¯ĞèÕıĞò£¨µÚ1¡úµÚ9£©
+                item["vod_remark"] = "å…¨%sé›†" % total_m.group(1)
+            # ç«™ç‚¹å‰§é›†åŒºæŒ‰æœ€æ–°åœ¨å‰ï¼ˆç¬¬9â†’ç¬¬1ï¼‰ï¼Œé€‰é›†éœ€æ­£åºï¼ˆç¬¬1â†’ç¬¬9ï¼‰
             if urls:
                 def _ep_num(pair):
-                    m2 = re.match(r"µÚ(\d+)", pair[0])
+                    m2 = re.match(r"ç¬¬(\d+)", pair[0])
                     return int(m2.group(1)) if m2 else 0
                 if all(_ep_num(p) for p in urls):
                     urls.sort(key=_ep_num)
@@ -683,16 +680,16 @@ class Spider(BaseSpider):
             return item
         text = self._get("%s/video/%s" % (BASE, code), referer=BASE + "/")
         text = text or ""
-        item["vod_name"] = self._clean(self._first(H1_RE, text)) or "ÕıÆ¬"
+        item["vod_name"] = self._clean(self._first(H1_RE, text)) or "æ­£ç‰‡"
         item["vod_pic"] = self._absolute(
             self._first(POSTER_RE, text) or self._first(OGIMG_RE, text)
         )
         item["vod_content"] = self._first(DESC_RE, text) or ""
-        # µ¥ÊÓÆµ£ºdata-hls Ö±½Ó´ÓÒÑ×¥Ò³ÃæÌáÈ¡£¬²»ÔÙ¶ş´ÎÇëÇó
+        # å•è§†é¢‘ï¼šdata-hls ç›´æ¥ä»å·²æŠ“é¡µé¢æå–ï¼Œä¸å†äºŒæ¬¡è¯·æ±‚
         m = HLS_RE.search(text)
         master = self._absolute(m.group(1)) if m else ""
         if master:
-            self._detail_lines(item, [("ÕıÆ¬", master)])
+            self._detail_lines(item, [("æ­£ç‰‡", master)])
         else:
             item["vod_play_url"] = ""
         return item
@@ -700,14 +697,14 @@ class Spider(BaseSpider):
     def playerContent(self, flag, id, vipFlags):
         del flag, vipFlags
         try:
-            # ¼æÈİÕû´®´«Èë£¨º¬ $$$/ #£©£ºÏÈÈ¡Ê×ÏßÂ·Ê×¼¯£¬ÔÙ²ğ Name$id
+            # å…¼å®¹æ•´ä¸²ä¼ å…¥ï¼ˆå« $$$/ #ï¼‰ï¼šå…ˆå–é¦–çº¿è·¯é¦–é›†ï¼Œå†æ‹† Name$id
             cur = str(id or "").split("$$$")[0].split("#")[0]
             sep = cur.rfind("$")
             play_id = (cur[sep + 1:] if sep >= 0 else cur).strip()
             if not play_id:
-                return {"parse": 0, "jx": 0, "url": "", "msg": "¿Õ²¥·ÅµØÖ·"}
+                return {"parse": 0, "jx": 0, "url": "", "msg": "ç©ºæ’­æ”¾åœ°å€"}
             want, play_id = self._decode_play(play_id)
-            # /video/xxx ¡ú ×¥Ò³ÃæÈ¡ data-hls£¨120s »º´æ£¬»»ÏßÂ·/ÖØ²¥Ãâ¶ş´Î×¥È¡£©
+            # /video/xxx â†’ æŠ“é¡µé¢å– data-hlsï¼ˆ120s ç¼“å­˜ï¼Œæ¢çº¿è·¯/é‡æ’­å…äºŒæ¬¡æŠ“å–ï¼‰
             if "/video/" in play_id and "master.m3u8" not in play_id:
                 code = play_id.rstrip("/").split("/")[-1]
                 master = self._dscache.get(code, "")
@@ -723,9 +720,9 @@ class Spider(BaseSpider):
                             "header": {"Referer": BASE + "/"}}
             else:
                 master = self._absolute(play_id)
-            # °´ÏßÂ·£¨ÇåÎú¶È£©Ìô variant£»ÎŞÖ¸¶¨Ê±È¡×î¸ß
+            # æŒ‰çº¿è·¯ï¼ˆæ¸…æ™°åº¦ï¼‰æŒ‘ variantï¼›æ— æŒ‡å®šæ—¶å–æœ€é«˜
             playable = self._pick_variant(master, want)
-            # Ô¤È¡Ã½Ìå m3u8 Óë key ½ø»º´æ£º´úÀíÊ×ÌøÃüÖĞ£¬Ïû³ıÉè±¸¶Ë³¬Ê±£¨2004£©
+            # é¢„å–åª’ä½“ m3u8 ä¸ key è¿›ç¼“å­˜ï¼šä»£ç†é¦–è·³å‘½ä¸­ï¼Œæ¶ˆé™¤è®¾å¤‡ç«¯è¶…æ—¶ï¼ˆ2004ï¼‰
             self._prefetch_media(playable)
             return {
                 "parse": 0,
@@ -735,10 +732,10 @@ class Spider(BaseSpider):
                 "format": "application/x-mpegURL",
             }
         except Exception as e:
-            return {"parse": 0, "jx": 0, "url": "", "msg": "²¥·ÅÊ§°Ü£º" + type(e).__name__}
+            return {"parse": 0, "jx": 0, "url": "", "msg": "æ’­æ”¾å¤±è´¥ï¼š" + type(e).__name__}
 
     def _prefetch_media(self, url):
-        """Ô¤È¡Ã½Ìå m3u8£¨master ÏÈ½âÎö variant£©Óë AES key£¬Ğ´Èë 60s »º´æ"""
+        """é¢„å–åª’ä½“ m3u8ï¼ˆmaster å…ˆè§£æ variantï¼‰ä¸ AES keyï¼Œå†™å…¥ 60s ç¼“å­˜"""
         try:
             c = self._pcache.get(url)
             if c and time.time() - c[0] < 60:
@@ -762,7 +759,7 @@ class Spider(BaseSpider):
         except Exception:
             pass
 
-    # ---------------- ±¾µØ´úÀí£ºm3u8 KEY ¸ÄĞ´ + ¶ş½øÖÆÈ¡»Ø£¨Áù¿Ç localProxy ÆõÔ¼£© ----------------
+    # ---------------- æœ¬åœ°ä»£ç†ï¼šm3u8 KEY æ”¹å†™ + äºŒè¿›åˆ¶å–å›ï¼ˆå…­å£³ localProxy å¥‘çº¦ï¼‰ ----------------
     def getProxyUrl(self, local=True):
         root = getattr(self, "_proxy_root", "")
         if root:
@@ -806,7 +803,7 @@ class Spider(BaseSpider):
         return root + sep + "type=" + kind + "&url=" + quote(str(url or ""), safe="")
 
     def _rewrite_m3u8(self, text, base):
-        # Ö»¸ÄĞ´ KEY µÄ URI£ºÏà¶ÔÂ·¾¶£¨»á±» ExoPlayer ½âÎöµ½ 127.0.0.1 404£©¸ÄÎª´úÀí¾ø¶ÔµØÖ·
+        # åªæ”¹å†™ KEY çš„ URIï¼šç›¸å¯¹è·¯å¾„ï¼ˆä¼šè¢« ExoPlayer è§£æåˆ° 127.0.0.1 404ï¼‰æ”¹ä¸ºä»£ç†ç»å¯¹åœ°å€
         out = []
         for raw in (text or "").replace("\r\n", "\n").replace("\r", "\n").split("\n"):
             line = raw.strip()
@@ -824,7 +821,7 @@ class Spider(BaseSpider):
         return body if body.endswith("\n") else body + "\n"
 
     def _fetch_key(self, url):
-        # key ¶Ëµã£ºÂãÇëÇó 403£¬ĞèÖ¸ÎÆ Session£¨ÂãÍ·£©£»³É¹¦»º´æ±ÜÃâÖØ¸´ÇëÇó
+        # key ç«¯ç‚¹ï¼šè£¸è¯·æ±‚ 403ï¼Œéœ€æŒ‡çº¹ Sessionï¼ˆè£¸å¤´ï¼‰ï¼›æˆåŠŸç¼“å­˜é¿å…é‡å¤è¯·æ±‚
         cached = self._kcache.get(url)
         if cached and time.time() - cached[0] < 300:
             return cached[1]
@@ -856,7 +853,7 @@ class Spider(BaseSpider):
         return b""
 
     def _fetch_bytes(self, url, referer=None):
-        # ts ¶Î/Í¼Æ¬£ºÂã Session£¨keep-alive£©¡ú µ¥·¢ÂãÇëÇó ¡ú Ö¸ÎÆÖĞºÍÍ· ¡ú urllib ¡ú ¿Ç fetch
+        # ts æ®µ/å›¾ç‰‡ï¼šè£¸ Sessionï¼ˆkeep-aliveï¼‰â†’ å•å‘è£¸è¯·æ±‚ â†’ æŒ‡çº¹ä¸­å’Œå¤´ â†’ urllib â†’ å£³ fetch
         h = {"User-Agent": USER_AGENT}
         if referer:
             h["Referer"] = referer
