@@ -51,7 +51,7 @@ class _AESCBC:
 
 class Spider(BaseSpider):
     def __init__(self):
-        self.host = "https://svlyibwt.cc"
+        self.host = "https://momodrift.top/home"
         self.api = self.host + "/api"
         self.name = "黄豆短剧"
         self.platform_key = "7961beb44246e3012ce228d6b5ced05a"
