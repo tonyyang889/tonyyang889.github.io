@@ -39,6 +39,10 @@
 {"key": "hs仓库资源","name": "hs仓库资源","type": 0,"api": "https://hsckzy888.com/api.php/provide/vod/from/hsckyun/at/xml","searchable": 1,"quickSearch": 1},
 {"key": "桃花资源","name": "桃花资源","type": 0,"api": "https://thzy1.me/api.php/provide/vod/at/xml","searchable": 1,"quickSearch": 1},
 {"key": "CK资源","name": "CK资源","type": 0,"api": "https://ckzy.me/api.php/provide/vod/at/xml","searchable": 1,"quickSearch": 1},
+
+{"key":"py_huangguo","name":"黄果短剧┃py","type":3,"api":"https://ysjtv.dedyn.io/json/huangguodj.py,"ext":""},
+{"key":"py_huangguo2","name":"黄果剧场┃py","type":3,"api":"https://ysjtv.dedyn.io/json/黄果剧场.py","ext":""},
+{"key":"py_huangdou","name":"黄豆短剧┃py","type":3,"api":"https://ysjtv.dedyn.io/json/黄豆短剧.py","ext":""},
   
 {"name": "无极┃(xBPQ)","jar":"./app/xBPQ0606.bmp","key":"csp_wjcl01","playerType":1,"type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/无极磁力xbpq.json"},
 //{"name":"磁力狗┃(XYQH)","jar":"./app/htv.bmp","key": "csp_XYQHiker_磁力狗","type":3,"api":"csp_XYQHiker","searchable":1,"quickSearch":1,"filterable":1,"ext":"./json/磁力狗.json"}   	
