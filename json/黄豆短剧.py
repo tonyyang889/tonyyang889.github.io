@@ -1,4 +1,4 @@
-# 来源 https://github.com/cluntop/tvbox/blob/main/fun.json-https://github.com/cluntop/tvbox/blob/main/js/ss/huangdou.py  
+# 来源 https://github.com/cluntop/tvbox/blob/main/fun.json-https://github.com/cluntop/tvbox/blob/main/js/ss/huangdou.py-https://svlyibwt.cc-/https://jaorexkn.cc
 # -*- coding: utf-8 -*-
 import gzip
 import hashlib
@@ -51,7 +51,7 @@ class _AESCBC:
 
 class Spider(BaseSpider):
     def __init__(self):
-        self.host = "https://jaorexkn.cc"
+        self.host = "https://svlyibwt.cc"
         self.api = self.host + "/api"
         self.name = "黄豆短剧"
         self.platform_key = "7961beb44246e3012ce228d6b5ced05a"
