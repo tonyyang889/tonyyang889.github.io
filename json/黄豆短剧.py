@@ -1,9 +1,4 @@
-#https://scu.gupuoplgm.cc/-https://scu.vchllzwu.cc/-https://whu.vchllzwu.cc/-https://nju.pqhybuxo.cc/-https://sdu.gupuoplgm.cc/-https://fdu.vchllzwu.cc/-https://sysu.pqhybuxo.cc/-https://hit.pqhybuxo.cc/-https://thu.gupuoplgm.cc/
-#µØÖ··¢²¼Ò³https://huangguoai.pages.dev-https://huang-guo.pages.dev
-#ÓÀ¾ÃµØÖ·https://huangguoai.com-https://huangguoai.ai
-#
-#À´Ô´ https://github.com/cluntop/tvbox/blob/main/fun.json   https://github.com/cluntop/tvbox/blob/main/js/ss/huangdou.py  
-
+# æ¥æº https://github.com/cluntop/tvbox/blob/main/fun.json-https://github.com/cluntop/tvbox/blob/main/js/ss/huangdou.py  
 # -*- coding: utf-8 -*-
 import gzip
 import hashlib
@@ -58,7 +53,7 @@ class Spider(BaseSpider):
     def __init__(self):
         self.host = "https://jaorexkn.cc"
         self.api = self.host + "/api"
-        self.name = "»Æ¶¹¶Ì¾ç"
+        self.name = "é»„è±†çŸ­å‰§"
         self.platform_key = "7961beb44246e3012ce228d6b5ced05a"
         self.version = "2.0.0"
         self.device_type = "web"
@@ -131,10 +126,10 @@ class Spider(BaseSpider):
         if eps:
             for i, ep in enumerate(eps, 1):
                 seq = ep.get("seq") or ep.get("episode") or ep.get("ep") or i
-                play.append("%s$%s|%s" % (ep.get("name") or ep.get("title") or "µÚ%s¼¯" % seq, vod_id, seq))
+                play.append("%s$%s|%s" % (ep.get("name") or ep.get("title") or "ç¬¬%sé›†" % seq, vod_id, seq))
         else:
-            play = ["µÚ%s¼¯$%s|%s" % (i, vod_id, i) for i in range(1, count + 1)]
-        vod = {"vod_id": vod_id, "vod_name": name, "vod_pic": self._pic(data), "type_name": data.get("category") or data.get("type") or "", "vod_year": "", "vod_area": "", "vod_remarks": data.get("update_label") or "È«%s¼¯" % count, "vod_actor": "", "vod_director": "", "vod_content": data.get("description") or data.get("summary") or name, "vod_play_from": self.name, "vod_play_url": "#".join(play)}
+            play = ["ç¬¬%sé›†$%s|%s" % (i, vod_id, i) for i in range(1, count + 1)]
+        vod = {"vod_id": vod_id, "vod_name": name, "vod_pic": self._pic(data), "type_name": data.get("category") or data.get("type") or "", "vod_year": "", "vod_area": "", "vod_remarks": data.get("update_label") or "å…¨%sé›†" % count, "vod_actor": "", "vod_director": "", "vod_content": data.get("description") or data.get("summary") or name, "vod_play_from": self.name, "vod_play_url": "#".join(play)}
         return {"list": [vod], "parse": 0, "jx": 0}
 
     def searchContent(self, key, quick, pg="1"):
@@ -212,7 +207,7 @@ class Spider(BaseSpider):
     def _classes(self):
         if self.class_cache:
             return self.class_cache
-        arr = [{"type_id": "all", "type_name": "È«²¿¶Ì¾ç"}]
+        arr = [{"type_id": "all", "type_name": "å…¨éƒ¨çŸ­å‰§"}]
         data = self._api("/drama/navList", {})
         for item in self._list(data.get("data", data) if isinstance(data, dict) else data):
             tid = str(item.get("code") or item.get("id") or item.get("cat_id") or "")
@@ -223,12 +218,12 @@ class Spider(BaseSpider):
         return arr
 
     def _filters(self, classes):
-        common = [{"key": "order", "name": "ÅÅĞò", "value": [{"n": "Ä¬ÈÏ", "v": ""}, {"n": "×îĞÂ", "v": "new"}, {"n": "×îÈÈ", "v": "hot"}]}, {"key": "update_status", "name": "×´Ì¬", "value": [{"n": "È«²¿", "v": ""}, {"n": "Á¬ÔØ", "v": "0"}, {"n": "Íê½á", "v": "1"}]}]
+        common = [{"key": "order", "name": "æ’åº", "value": [{"n": "é»˜è®¤", "v": ""}, {"n": "æœ€æ–°", "v": "new"}, {"n": "æœ€çƒ­", "v": "hot"}]}, {"key": "update_status", "name": "çŠ¶æ€", "value": [{"n": "å…¨éƒ¨", "v": ""}, {"n": "è¿è½½", "v": "0"}, {"n": "å®Œç»“", "v": "1"}]}]
         fs = {}
         for c in classes:
             tid = c["type_id"]
             tabs = self._nav_filter(tid) if tid not in ("all", "yuandou") else []
-            fs[tid] = ([{"key": "sub", "name": "×Ó·ÖÀà", "value": [{"n": t.get("name", "Ä¬ÈÏ"), "v": str(i)} for i, t in enumerate(tabs)]}] if tabs else []) + common
+            fs[tid] = ([{"key": "sub", "name": "å­åˆ†ç±»", "value": [{"n": t.get("name", "é»˜è®¤"), "v": str(i)} for i, t in enumerate(tabs)]}] if tabs else []) + common
         return fs
 
     def _nav_filter(self, code):
@@ -265,7 +260,7 @@ class Spider(BaseSpider):
     def _vod(self, item):
         item = item or {}
         vid = self._sid(item.get("id") or item.get("drama_id") or "")
-        remarks = item.get("update_label") or item.get("corner") or ("È«%s¼¯" % item.get("episode_count") if item.get("episode_count") else "")
+        remarks = item.get("update_label") or item.get("corner") or ("å…¨%sé›†" % item.get("episode_count") if item.get("episode_count") else "")
         return {"vod_id": vid, "vod_name": item.get("name") or item.get("title") or item.get("t") or vid, "vod_pic": self._pic(item), "vod_remarks": remarks}
 
     def _pic(self, item):
