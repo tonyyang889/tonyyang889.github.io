@@ -41,7 +41,7 @@ class Spider:
     _TIMEOUT = 20
 
     def __init__(self):
-        self.host = "https://jlu.uc41p53k.cc/"
+        self.host = "https://jlu.uc41p53k.cc"
         self.ua = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                    "AppleWebKit/537.36 (KHTML, like Gecko) "
                    "Chrome/120.0.0.0 Safari/537.36")
