@@ -1,7 +1,3 @@
-# https://scu.gupuoplgm.cc/-https://scu.vchllzwu.cc/-https://whu.vchllzwu.cc/-https://nju.pqhybuxo.cc/-https://sdu.gupuoplgm.cc/-https://fdu.vchllzwu.cc/-https://sysu.pqhybuxo.cc/-https://hit.pqhybuxo.cc/-https://thu.gupuoplgm.cc/
-# 地址发布页https://huangguoai.pages.dev-https://huang-guo.pages.dev
-# 永久地址https://huangguoai.com-https://huangguoai.ai
-# 来源 https://github.com/cluntop/tvbox/blob/main/fun.json   https://github.com/cluntop/tvbox/blob/main/js/ss/huangguo2.py  
 # -*- coding: utf-8 -*-
 
 import re
