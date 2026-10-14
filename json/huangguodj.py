@@ -1,9 +1,9 @@
-#https://scu.gupuoplgm.cc/-https://scu.vchllzwu.cc/-https://whu.vchllzwu.cc/-https://nju.pqhybuxo.cc/-https://sdu.gupuoplgm.cc/-https://fdu.vchllzwu.cc/-https://sysu.pqhybuxo.cc/-https://hit.pqhybuxo.cc/-https://thu.gupuoplgm.cc/
-#µØÖ··¢²¼Ò³https://huangguoai.pages.dev-https://huang-guo.pages.dev
-#ÓÀ¾ÃµØÖ·https://huangguoai.com-https://huangguoai.ai
-#À´Ô´ https://github.com/cluntop/tvbox/blob/main/fun.json   https://github.com/cluntop/tvbox/blob/main/js/ss/huangguo2.py  
-
+# https://scu.gupuoplgm.cc/-https://scu.vchllzwu.cc/-https://whu.vchllzwu.cc/-https://nju.pqhybuxo.cc/-https://sdu.gupuoplgm.cc/-https://fdu.vchllzwu.cc/-https://sysu.pqhybuxo.cc/-https://hit.pqhybuxo.cc/-https://thu.gupuoplgm.cc/
+# åœ°å€å‘å¸ƒé¡µhttps://huangguoai.pages.dev-https://huang-guo.pages.dev
+# æ°¸ä¹…åœ°å€https://huangguoai.com-https://huangguoai.ai
+# æ¥æº https://github.com/cluntop/tvbox/blob/main/fun.json   https://github.com/cluntop/tvbox/blob/main/js/ss/huangguo2.py  
 # -*- coding: utf-8 -*-
+
 import re
 import sys
 import json
@@ -36,7 +36,7 @@ except Exception:
 
 
 class Spider:
-    """»Æ¹û¶Ì¾çÎå¿ÇÍ¨ÓÃ¶ÀÁ¢ Spider"""
+    """é»„æœçŸ­å‰§äº”å£³é€šç”¨ç‹¬ç«‹ Spider"""
 
     _IMG_KEY = bytes([102, 53, 100, 57, 54, 53, 100, 102, 55, 53, 51, 51, 54, 50, 55, 48])
     _IMG_IV = bytes([57, 55, 98, 54, 48, 51, 57, 52, 97, 98, 99, 50, 102, 98, 101, 49])
@@ -54,15 +54,15 @@ class Spider:
         self.img_iv = b'97b60394abc2fbe1'
         self.img_hosts = {'pic.eanfog.cn', 'pic.zdmhyg.cn', 'pic.tuafjz.cn'}
         self.base_cates = [
-            {"type_id": "ai-duanju", "type_name": "AI³ÉÈË¶Ì¾ç"},
-            {"type_id": "ai-manju", "type_name": "AI³ÉÈËÂş¾ç"},
-            {"type_id": "ai-huanlian", "type_name": "AI»»Á³"},
-            {"type_id": "ai-mogai", "type_name": "AIÄ§¸Ä"},
+            {"type_id": "ai-duanju", "type_name": "AIæˆäººçŸ­å‰§"},
+            {"type_id": "ai-manju", "type_name": "AIæˆäººæ¼«å‰§"},
+            {"type_id": "ai-huanlian", "type_name": "AIæ¢è„¸"},
+            {"type_id": "ai-mogai", "type_name": "AIé­”æ”¹"},
         ]
         self._recommend_cache = None
 
     def getName(self):
-        return "»Æ¹û¶Ì¾ç"
+        return "é»„æœçŸ­å‰§"
 
     def getDependence(self):
         return []
@@ -80,37 +80,37 @@ class Spider:
         ext = json.dumps(extend, ensure_ascii=False) if extend else str(extend)
         self.pics_direct = "direct=1" in ext
         self.categories = [
-            {"type_id": "recommend", "type_name": "¾«Ñ¡ÍÆ¼ö"},
-            {"type_id": "ai-duanju", "type_name": "AI³ÉÈË¶Ì¾ç"},
-            {"type_id": "ai-manju", "type_name": "AI³ÉÈËÂş¾ç"},
-            {"type_id": "ai-huanlian", "type_name": "AI»»Á³"},
-            {"type_id": "ai-mogai", "type_name": "AIÄ§¸Ä"},
-            {"type_id": "ranks", "type_name": "ÅÅĞĞ°ñ"},
-            {"type_id": "chigua", "type_name": "»Æ¹û³Ô¹Ï"},
-            {"type_id": "topics", "type_name": "»°Ìâ¾«Ñ¡"},
+            {"type_id": "recommend", "type_name": "ç²¾é€‰æ¨è"},
+            {"type_id": "ai-duanju", "type_name": "AIæˆäººçŸ­å‰§"},
+            {"type_id": "ai-manju", "type_name": "AIæˆäººæ¼«å‰§"},
+            {"type_id": "ai-huanlian", "type_name": "AIæ¢è„¸"},
+            {"type_id": "ai-mogai", "type_name": "AIé­”æ”¹"},
+            {"type_id": "ranks", "type_name": "æ’è¡Œæ¦œ"},
+            {"type_id": "chigua", "type_name": "é»„æœåƒç“œ"},
+            {"type_id": "topics", "type_name": "è¯é¢˜ç²¾é€‰"},
         ]
         self.filters = {
-            "ai-duanju": [{"key": "sort", "name": "ÅÅĞò", "value": [
-                {"n": "×îĞÂ¸üĞÂ", "v": "latest"}, {"n": "µ±Ç°ÈÈ²¥", "v": "hot"},
-                {"n": "¶À¼ÒÔ­´´", "v": "original"}, {"n": "Ëæ»úÍÆ¼ö", "v": "random"}]}],
-            "ai-manju": [{"key": "sort", "name": "ÅÅĞò", "value": [
-                {"n": "×îĞÂ¸üĞÂ", "v": "latest"}, {"n": "µ±Ç°ÈÈ²¥", "v": "hot"},
-                {"n": "¶À¼ÒÔ­´´", "v": "original"}, {"n": "Ëæ»úÍÆ¼ö", "v": "random"}]}],
-            "ai-huanlian": [{"key": "sort", "name": "ÅÅĞò", "value": [
-                {"n": "×îĞÂ¸üĞÂ", "v": "latest"}, {"n": "µ±Ç°ÈÈ²¥", "v": "hot"},
-                {"n": "¶À¼ÒÔ­´´", "v": "original"}, {"n": "Ëæ»úÍÆ¼ö", "v": "random"}]}],
-            "ai-mogai": [{"key": "sort", "name": "ÅÅĞò", "value": [
-                {"n": "×îĞÂ¸üĞÂ", "v": "latest"}, {"n": "µ±Ç°ÈÈ²¥", "v": "hot"},
-                {"n": "¶À¼ÒÔ­´´", "v": "original"}, {"n": "Ëæ»úÍÆ¼ö", "v": "random"}]}],
-            "ranks": [{"key": "rank_type", "name": "°ñµ¥", "value": [
-                {"n": "ÈÈ²¥°ñ", "v": "hot"}, {"n": "ÍÆ¼ö°ñ", "v": "recommend"},
-                {"n": "Ç±Á¦°ñ", "v": "potential"}]}],
-            "chigua": [{"key": "cate", "name": "·ÖÀà", "value": [
-                {"n": "È«²¿", "v": "all"}, {"n": "ÈÈÃÅ³Ô¹Ï", "v": "remen"},
-                {"n": "AIÔ­´´", "v": "yuanchuang"}]}],
-            "topics": [{"key": "tid", "name": "»°Ìâ", "value": [
-                {"n": "ÈÈÃÅAI¶Ì¾ç", "v": "hot-aiduanju"}, {"n": "Å·ÃÀ¶Ì¾ç", "v": "oumei-duanju"},
-                {"n": "Ìì²ÅÄĞÓÑ", "v": "tiancai-nantong"}, {"n": "Ã÷ĞÇ»»Á³", "v": "mingxing-huanlian"}]}],
+            "ai-duanju": [{"key": "sort", "name": "æ’åº", "value": [
+                {"n": "æœ€æ–°æ›´æ–°", "v": "latest"}, {"n": "å½“å‰çƒ­æ’­", "v": "hot"},
+                {"n": "ç‹¬å®¶åŸåˆ›", "v": "original"}, {"n": "éšæœºæ¨è", "v": "random"}]}],
+            "ai-manju": [{"key": "sort", "name": "æ’åº", "value": [
+                {"n": "æœ€æ–°æ›´æ–°", "v": "latest"}, {"n": "å½“å‰çƒ­æ’­", "v": "hot"},
+                {"n": "ç‹¬å®¶åŸåˆ›", "v": "original"}, {"n": "éšæœºæ¨è", "v": "random"}]}],
+            "ai-huanlian": [{"key": "sort", "name": "æ’åº", "value": [
+                {"n": "æœ€æ–°æ›´æ–°", "v": "latest"}, {"n": "å½“å‰çƒ­æ’­", "v": "hot"},
+                {"n": "ç‹¬å®¶åŸåˆ›", "v": "original"}, {"n": "éšæœºæ¨è", "v": "random"}]}],
+            "ai-mogai": [{"key": "sort", "name": "æ’åº", "value": [
+                {"n": "æœ€æ–°æ›´æ–°", "v": "latest"}, {"n": "å½“å‰çƒ­æ’­", "v": "hot"},
+                {"n": "ç‹¬å®¶åŸåˆ›", "v": "original"}, {"n": "éšæœºæ¨è", "v": "random"}]}],
+            "ranks": [{"key": "rank_type", "name": "æ¦œå•", "value": [
+                {"n": "çƒ­æ’­æ¦œ", "v": "hot"}, {"n": "æ¨èæ¦œ", "v": "recommend"},
+                {"n": "æ½œåŠ›æ¦œ", "v": "potential"}]}],
+            "chigua": [{"key": "cate", "name": "åˆ†ç±»", "value": [
+                {"n": "å…¨éƒ¨", "v": "all"}, {"n": "çƒ­é—¨åƒç“œ", "v": "remen"},
+                {"n": "AIåŸåˆ›", "v": "yuanchuang"}]}],
+            "topics": [{"key": "tid", "name": "è¯é¢˜", "value": [
+                {"n": "çƒ­é—¨AIçŸ­å‰§", "v": "hot-aiduanju"}, {"n": "æ¬§ç¾çŸ­å‰§", "v": "oumei-duanju"},
+                {"n": "å¤©æ‰ç”·å‹", "v": "tiancai-nantong"}, {"n": "æ˜æ˜Ÿæ¢è„¸", "v": "mingxing-huanlian"}]}],
         }
 
     def _headers(self, referer=None):
@@ -129,7 +129,7 @@ class Spider:
         }
 
     def _session_obj(self):
-        """¸´ÓÃ Session£¬ĞĞÎª½Ó½üÕæÊµä¯ÀÀÆ÷³ÖĞø·ÃÎÊ"""
+        """å¤ç”¨ Sessionï¼Œè¡Œä¸ºæ¥è¿‘çœŸå®æµè§ˆå™¨æŒç»­è®¿é—®"""
         if self._session is not None:
             return self._session
         if requests is None:
@@ -144,7 +144,7 @@ class Spider:
             return None
 
     def _ensure_str(self, data, asjson=False):
-        """°ÑÏìÓ¦Í³Ò»Îª¸É¾»×Ö·û´®£»´¦Àí gzip Óë¿í×Ö·û±àÂë£¬±ÜÃâ lxml ±àÂëÌ½²â±¨´í"""
+        """æŠŠå“åº”ç»Ÿä¸€ä¸ºå¹²å‡€å­—ç¬¦ä¸²ï¼›å¤„ç† gzip ä¸å®½å­—ç¬¦ç¼–ç ï¼Œé¿å… lxml ç¼–ç æ¢æµ‹æŠ¥é”™"""
         if isinstance(data, str):
             return data
         if data is None:
@@ -156,7 +156,7 @@ class Spider:
                     data = gzip.decompress(data)
                 except Exception:
                     pass
-            # È¥µô UTF-32/UTF-16 BOM£¬±ÜÃâ lxml "encoding not supported" ±¨´í
+            # å»æ‰ UTF-32/UTF-16 BOMï¼Œé¿å… lxml "encoding not supported" æŠ¥é”™
             for bom, enc in ((b"\xff\xfe\x00\x00", "utf-32"), (b"\x00\x00\xfe\xff", "utf-32"),
                              (b"\xff\xfe", "utf-16"), (b"\xfe\xff", "utf-16")):
                 if data[:len(bom)] == bom:
@@ -237,7 +237,7 @@ class Spider:
         return u
 
     def _img_src(self, u):
-        """ÌŞ³ı CDN ·ÀµÁÁ´µÄ auth_key µÈ²éÑ¯²ÎÊı£¬µÃµ½²»¹ıÆÚµÄÎÈ¶¨Ö±Á´"""
+        """å‰”é™¤ CDN é˜²ç›—é“¾çš„ auth_key ç­‰æŸ¥è¯¢å‚æ•°ï¼Œå¾—åˆ°ä¸è¿‡æœŸçš„ç¨³å®šç›´é“¾"""
         u = self._fix(u or "")
         if u.startswith("http") and "?" in u:
             u = re.sub(r"\?.*", "", u)
@@ -254,7 +254,7 @@ class Spider:
         return "http://127.0.0.1:9978/proxy?do=py"
 
     def _proxy_pic(self, u):
-        """Í¼Æ¬×ß¿Ç±¾µØ´úÀí£¬ÓÉ localProxy ½âÃÜºó·µ»ØÕæÊµÍ¼Æ¬"""
+        """å›¾ç‰‡èµ°å£³æœ¬åœ°ä»£ç†ï¼Œç”± localProxy è§£å¯†åè¿”å›çœŸå®å›¾ç‰‡"""
         u = self._img_src(u)
         if not u:
             return ""
@@ -264,7 +264,7 @@ class Spider:
         return self.getProxyUrl() + "&url=" + enc + "&type=img"
 
     def _decrypt_img(self, raw):
-        """AES-128-CBC ½âÃÜÕ¾µã·âÃæ×Ö½Ú£»ÎŞ¼ÓÃÜ»ò½âÃÜÊ§°ÜÊ±Ô­Ñù·µ»Ø"""
+        """AES-128-CBC è§£å¯†ç«™ç‚¹å°é¢å­—èŠ‚ï¼›æ— åŠ å¯†æˆ–è§£å¯†å¤±è´¥æ—¶åŸæ ·è¿”å›"""
         if not raw or len(raw) % 16 != 0 or _AES is None:
             return raw
         try:
@@ -313,7 +313,7 @@ class Spider:
         rem = "".join(card.xpath('.//*[contains(@class,"hg-drama-card__episode")]//text()')).strip()
         score = "".join(card.xpath('.//*[contains(@class,"hg-drama-card__score")]//text()')).strip()
         if rem and score:
-            rem = rem + " ¡¤ " + score
+            rem = rem + " Â· " + score
         elif not rem:
             rem = score
         return {
@@ -393,7 +393,7 @@ class Spider:
         return int(m.group(1)) if m else 0
 
     def _api_items(self, path, params=None):
-        """Õ¾µã JSON ½Ó¿ÚÓÅÏÈ£¬ĞĞÎª½Ó½üÕæÊµä¯ÀÀÆ÷³ÖĞø·ÃÎÊ"""
+        """ç«™ç‚¹ JSON æ¥å£ä¼˜å…ˆï¼Œè¡Œä¸ºæ¥è¿‘çœŸå®æµè§ˆå™¨æŒç»­è®¿é—®"""
         try:
             data = self._get(self.host + path, asjson=True)
         except Exception:
@@ -417,17 +417,17 @@ class Spider:
                 total = int(item.get("episode_count") or item.get("total_episodes") or 0)
             except Exception:
                 total = 0
-            return ("È«%d¼¯" % total) if total else "ÒÑÍê½á"
+            return ("å…¨%dé›†" % total) if total else "å·²å®Œç»“"
         try:
             ep = int(item.get("episode_count") or 0)
         except Exception:
             ep = 0
         if ep:
-            return "¸üĞÂÖÁ%d¼¯" % ep
+            return "æ›´æ–°è‡³%dé›†" % ep
         score = item.get("score")
         try:
             if score not in (None, ""):
-                return str(score) + "·Ö"
+                return str(score) + "åˆ†"
         except Exception:
             pass
         return ""
@@ -439,7 +439,7 @@ class Spider:
         tags = item.get("tags")
         remarks = self._api_remarks(item)
         if isinstance(tags, list) and tags:
-            tag_str = "¡¤".join([str(t) for t in tags[:3] if t])
+            tag_str = "Â·".join([str(t) for t in tags[:3] if t])
             if tag_str:
                 remarks = (remarks + " " + tag_str).strip() if remarks else tag_str
         return {
@@ -462,7 +462,7 @@ class Spider:
             remarks = ""
         tags = item.get("tags")
         if isinstance(tags, list) and tags:
-            tag_str = "¡¤".join([str(t) for t in tags[:3] if t])
+            tag_str = "Â·".join([str(t) for t in tags[:3] if t])
             if tag_str:
                 remarks = (remarks + " " + tag_str).strip() if remarks else tag_str
         if not remarks:
@@ -487,14 +487,14 @@ class Spider:
                 self.filters = dict()
             return
         self.categories = [
-            {"type_id": "recommend", "type_name": "¾«Ñ¡ÍÆ¼ö"},
-            {"type_id": "ai-duanju", "type_name": "AI³ÉÈË¶Ì¾ç"},
-            {"type_id": "ai-manju", "type_name": "AI³ÉÈËÂş¾ç"},
-            {"type_id": "ai-huanlian", "type_name": "AI»»Á³"},
-            {"type_id": "ai-mogai", "type_name": "AIÄ§¸Ä"},
-            {"type_id": "ranks", "type_name": "ÅÅĞĞ°ñ"},
-            {"type_id": "chigua", "type_name": "»Æ¹û³Ô¹Ï"},
-            {"type_id": "topics", "type_name": "»°Ìâ¾«Ñ¡"},
+            {"type_id": "recommend", "type_name": "ç²¾é€‰æ¨è"},
+            {"type_id": "ai-duanju", "type_name": "AIæˆäººçŸ­å‰§"},
+            {"type_id": "ai-manju", "type_name": "AIæˆäººæ¼«å‰§"},
+            {"type_id": "ai-huanlian", "type_name": "AIæ¢è„¸"},
+            {"type_id": "ai-mogai", "type_name": "AIé­”æ”¹"},
+            {"type_id": "ranks", "type_name": "æ’è¡Œæ¦œ"},
+            {"type_id": "chigua", "type_name": "é»„æœåƒç“œ"},
+            {"type_id": "topics", "type_name": "è¯é¢˜ç²¾é€‰"},
         ]
         self.filters = dict()
 
@@ -519,12 +519,12 @@ class Spider:
                 total = int(item.get("episode_count") or item.get("total_episodes") or 0)
             except Exception:
                 total = 0
-            return ("È«%d¼¯" % total) if total else "ÒÑÍê½á"
+            return ("å…¨%dé›†" % total) if total else "å·²å®Œç»“"
         try:
             ep = int(item.get("episode_count") or 0)
         except Exception:
             ep = 0
-        return ("¸üĞÂÖÁ%d¼¯" % ep) if ep else ""
+        return ("æ›´æ–°è‡³%dé›†" % ep) if ep else ""
 
     def _category_api(self, base_id, sort, page, per=20):
         result = {"list": [], "page": page, "pagecount": 1, "limit": per, "total": 0}
@@ -573,7 +573,7 @@ class Spider:
                 pos = html.find('href="%s"' % href)
                 chunk = html[pos:pos + 600] if pos >= 0 else ""
                 pm = re.search(r'data-src="(https?://[^"]+)"', chunk) or re.search(r'src="(https?://[^"]+)"', chunk)
-                result["list"].append({"vod_id": "archives_%s" % pid, "vod_name": title.strip(), "vod_pic": self._proxy_pic(pm.group(1)) if pm else "", "vod_remarks": "³Ô¹Ï"})
+                result["list"].append({"vod_id": "archives_%s" % pid, "vod_name": title.strip(), "vod_pic": self._proxy_pic(pm.group(1)) if pm else "", "vod_remarks": "åƒç“œ"})
             pm2 = re.search(r'data-pages="(\d+)"', html)
             result["pagecount"] = int(pm2.group(1)) if pm2 else (page if len(result["list"]) < per else page + 1)
             result["total"] = len(result["list"])
@@ -597,7 +597,7 @@ class Spider:
                 tm = re.search(r'hg-drama-card__title[^>]*><a[^>]*>([^<]+)</a>', c)
                 pm = re.search(r'data-src="(https?://[^"]+)"', c) or re.search(r'src="(https?://[^"]+)"', c)
                 em = re.search(r'hg-drama-card__episode[^>]*>([^<]+)', c)
-                result["list"].append({"vod_id": lm.group(2), "vod_name": tm.group(1).strip() if tm else ("ÊÓÆµ%s" % lm.group(2)), "vod_pic": self._proxy_pic(pm.group(1)) if pm else "", "vod_remarks": em.group(1).strip() if em else ""})
+                result["list"].append({"vod_id": lm.group(2), "vod_name": tm.group(1).strip() if tm else ("è§†é¢‘%s" % lm.group(2)), "vod_pic": self._proxy_pic(pm.group(1)) if pm else "", "vod_remarks": em.group(1).strip() if em else ""})
             pm2 = re.search(r'data-pages="(\d+)"', html)
             result["pagecount"] = int(pm2.group(1)) if pm2 else (page if len(result["list"]) < per else page + 1)
             result["total"] = len(result["list"])
@@ -693,7 +693,7 @@ class Spider:
                     if tree is not None:
                         if not title:
                             tm = "".join(tree.xpath('//h1/text()')).strip()
-                            title = re.sub(r'\s*µÚ\s*\d+\s*¼¯\s*$', '', tm).strip() if tm else vid
+                            title = re.sub(r'\s*ç¬¬\s*\d+\s*é›†\s*$', '', tm).strip() if tm else vid
                         if not cover:
                             pic_l = tree.xpath('//*[contains(@class,"hg-web-detail__poster")]//img/@data-src') or tree.xpath('//*[contains(@class,"hg-web-detail__poster")]//img/@src') or tree.xpath('//img/@data-src') or tree.xpath('//img/@src')
                             cover = self._proxy_pic(pic_l[0].strip()) if pic_l else ""
@@ -709,18 +709,18 @@ class Spider:
                             if not href:
                                 continue
                             eid = a.get("data-ep-id", "") or ""
-                            name_ep = "µÚ" + eid + "¼¯" if eid else "".join(a.xpath('.//text()')).strip()
+                            name_ep = "ç¬¬" + eid + "é›†" if eid else "".join(a.xpath('.//text()')).strip()
                             eps.append(name_ep + "$" + self._fix(href))
                         if not eps:
                             play = tree.xpath('//*[contains(@class,"hg-web-detail__play")]/@href')
                             if play:
-                                eps = ["µÚ1¼¯$" + self._fix(play[0])]
+                                eps = ["ç¬¬1é›†$" + self._fix(play[0])]
                         if eps:
-                            info = {"vod_id": vid, "vod_name": title, "vod_pic": cover, "vod_play_from": "»Æ¹û¶Ì¾ç", "vod_play_url": "#".join(eps), "vod_content": desc}
+                            info = {"vod_id": vid, "vod_name": title, "vod_pic": cover, "vod_play_from": "é»„æœçŸ­å‰§", "vod_play_url": "#".join(eps), "vod_content": desc}
                             if remarks_l:
                                 info["vod_remarks"] = remarks_l
                             elif score_l:
-                                info["vod_remarks"] = score_l + "·Ö"
+                                info["vod_remarks"] = score_l + "åˆ†"
                             if tags:
                                 info["vod_class"] = ",".join(tags)
                             ym = re.search(r"(20\d{2})-(\d{2})-(\d{2})", meta or "")
@@ -730,13 +730,13 @@ class Spider:
                             return result
             ep_srcs = self._extract_sources(vid)
             if ep_srcs:
-                segs = ["µÚ%s¼¯$%s" % (ep, src) for ep, src in sorted(ep_srcs.items(), key=lambda x: int(x[0]))]
+                segs = ["ç¬¬%sé›†$%s" % (ep, src) for ep, src in sorted(ep_srcs.items(), key=lambda x: int(x[0]))]
                 play_url = "#".join(segs)
             else:
-                play_url = "µÚ1¼¯$%s" % vid
+                play_url = "ç¬¬1é›†$%s" % vid
             if not title:
                 title = vid
-            result["list"].append({"vod_id": vid, "vod_name": title, "vod_pic": cover, "vod_content": desc, "vod_play_from": "»Æ¹û¶Ì¾ç", "vod_play_url": play_url})
+            result["list"].append({"vod_id": vid, "vod_name": title, "vod_pic": cover, "vod_content": desc, "vod_play_from": "é»„æœçŸ­å‰§", "vod_play_url": play_url})
         except Exception:
             pass
         return result
@@ -800,7 +800,7 @@ class Spider:
             if not html:
                 return result
             tm = re.search(r'<title>(.*?)</title>', html)
-            title = (tm.group(1).replace(" - »Æ¹û¶Ì¾ç", "").strip()) if tm else ("³Ô¹Ï%s" % post_id)
+            title = (tm.group(1).replace(" - é»„æœçŸ­å‰§", "").strip()) if tm else ("åƒç“œ%s" % post_id)
             pm = re.search(r'data-src="(https?://[^"]+)"', html) or re.search(r'src="(https?://[^"]+)"', html)
             pic = self._proxy_pic(pm.group(1)) if pm else ""
             video_url = ""
@@ -815,8 +815,8 @@ class Spider:
                 m = re.search(r'(https?://[^\s"\'<>]+\.(?:m3u8|mp4)[^\s"\'<>]*)', html)
                 if m:
                     video_url = m.group(1)
-            play_url = "µÚ1¼¯$%s" % video_url if video_url else "µÚ1¼¯$%s" % post_id
-            result["list"].append({"vod_id": "archives_%s" % post_id, "vod_name": title, "vod_pic": pic, "vod_content": "³Ô¹ÏÄÚÈİ", "vod_play_from": "»Æ¹û¶Ì¾ç", "vod_play_url": play_url})
+            play_url = "ç¬¬1é›†$%s" % video_url if video_url else "ç¬¬1é›†$%s" % post_id
+            result["list"].append({"vod_id": "archives_%s" % post_id, "vod_name": title, "vod_pic": pic, "vod_content": "åƒç“œå†…å®¹", "vod_play_from": "é»„æœçŸ­å‰§", "vod_play_url": play_url})
         except Exception:
             pass
         return result
