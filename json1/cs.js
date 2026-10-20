@@ -1,5 +1,5 @@
 /**
- * 金牌影视 https://www.jpyy.com/
+ * 发布页 https://www.jpyy.com/
  */
 
 const baseUrl = 'https://www.x8kb9k8.com';
@@ -136,7 +136,7 @@ async function apiDetail(vid) {
   const data = await apiGet('/anonymous/video/detail', { id: str(vid) });
   const episodes = Array.isArray(data.episodeList) ? data.episodeList : [];
   const list = episodes.map(function (episode) {
-    const name = str(episode.name || '第01集').replace(/\$/g, '＄').replace(/#/g, '＃');
+    const name = str(episode.name || '正片').replace(/\$/g, '＄').replace(/#/g, '＃');
     return name + '$' + str(vid) + '_' + str(episode.nid || '');
   }).join('#');
   return {
@@ -151,7 +151,7 @@ async function apiDetail(vid) {
     vod_year: str(data.vodYear || data.vodPubdate || '').slice(0, 4),
     type_name: str(data.typeName || data.vodClass || ''),
     vod_remarks: str(data.vodRemarks || data.vodVersion || ''),
-    vod_play_from: list ? '金牌影视' : '',
+    vod_play_from: list ? '金牌影院' : '',
     vod_play_url: list
   };
 }
@@ -273,35 +273,35 @@ async function home(filter) {
   ];
   const filters = {
     '1': [
-      { key: 'class', name: '剧情', value: [v('全部', ''), v('动作', '动作'), v('喜剧', '喜剧'), v('爱情', '爱情'), v('科幻', '科幻'), v('恐怖', '恐怖'), v('悬疑', '悬疑'), v('惊悚', '惊悚'), v('犯罪', '犯罪'), v('战争', '战争'), v('冒险', '冒险'), v('奇幻', '奇幻'), v('武侠', '武侠'), v('灾难', '灾难'), v('伦理', '伦理'), v('剧情', '剧情'), v('全部', '全部')] },
-      { key: 'area', name: '地区', value: [v('全部', ''), v('中国大陆', '中国大陆'), v('中国香港', '中国香港'), v('中国台湾', '中国台湾'), v('美国', '美国'), v('韩国', '韩国'), v('日本', '日本'), v('英国', '英国'), v('法国', '法国'), v('泰国', '泰国'), v('印度', '印度'), v('全部', '全部')] },
+      { key: 'class', name: '剧情', value: [v('全部', ''), v('喜剧', '喜剧'), v('动作', '动作'), v('爱情', '爱情'), v('科幻', '科幻'), v('悬疑', '悬疑'), v('奇幻', '奇幻'), v('恐怖', '恐怖'), v('剧情', '剧情'), v('犯罪', '犯罪'), v('动画', '动画'), v('惊悚', '惊悚'), v('战争', '战争'), v('冒险', '冒险'), v('灾难', '灾难'), v('伦理', '伦理'), v('其他', '其他')] },
+      { key: 'area', name: '地区', value: [v('全部', ''), v('中国大陆', '中国大陆'), v('中国香港', '中国香港'), v('中国台湾', '中国台湾'), v('美国', '美国'), v('日本', '日本'), v('韩国', '韩国'), v('印度', '印度'), v('泰国', '泰国'), v('英国', '英国'), v('法国', '法国'), v('其他', '其他')] },
       { key: 'year', name: '年份', value: [v('全部', ''), v('2026', '2026'), v('2025', '2025'), v('2024', '2024'), v('2023', '2023'), v('2022', '2022'), v('2021', '2021'), v('2020', '2020'), v('2019', '2019'), v('2018', '2018'), v('2017', '2017'), v('2016', '2016'), v('2015', '2015'), v('2014', '2014'), v('2013', '2013'), v('2012', '2012'), v('2011', '2011'), v('2010', '2010'), v('2009~2000', '2009~2000')] },
-      { key: 'lang', name: '语言', value: [v('全部', ''), v('国语', '国语'), v('粤语', '粤语'), v('英语', '英语'), v('日语', '日语'), v('韩语', '韩语'), v('全部', '全部')] }
+      { key: 'lang', name: '语言', value: [v('全部', ''), v('国语', '国语'), v('英语', '英语'), v('粤语', '粤语'), v('韩语', '韩语'), v('日语', '日语'), v('其他', '其他')] }
     ],
     '2': [
-      { key: 'type', name: '类型', value: [v('全部', ''), v('国产剧', '14'), v('港台剧', '15'), v('日韩剧', '16'), v('欧美剧', '62'), v('全部', '68')] },
-      { key: 'class', name: '剧情', value: [v('全部', ''), v('古装', '古装'), v('武侠', '武侠'), v('动作', '动作'), v('爱情', '爱情'), v('战争', '战争'), v('喜剧', '喜剧'), v('悬疑', '悬疑'), v('犯罪', '犯罪'), v('恐怖', '恐怖'), v('惊悚', '惊悚'), v('全部', '全部')] },
-      { key: 'area', name: '地区', value: [v('全部', ''), v('中国大陆', '中国大陆'), v('中国香港', '中国香港'), v('中国台湾', '中国台湾'), v('美国', '美国'), v('日本', '日本'), v('韩国', '韩国'), v('英国', '英国'), v('全部', '全部')] },
+      { key: 'type', name: '类型', value: [v('全部', ''), v('国产剧', '14'), v('欧美剧', '15'), v('港台剧', '16'), v('日韩剧', '62'), v('其他剧', '68')] },
+      { key: 'class', name: '剧情', value: [v('全部', ''), v('古装', '古装'), v('战争', '战争'), v('喜剧', '喜剧'), v('家庭', '家庭'), v('犯罪', '犯罪'), v('动作', '动作'), v('奇幻', '奇幻'), v('剧情', '剧情'), v('历史', '历史'), v('短片', '短片'), v('其他', '其他')] },
+      { key: 'area', name: '地区', value: [v('全部', ''), v('中国大陆', '中国大陆'), v('中国香港', '中国香港'), v('中国台湾', '中国台湾'), v('日本', '日本'), v('韩国', '韩国'), v('美国', '美国'), v('泰国', '泰国'), v('其他', '其他')] },
       { key: 'year', name: '年份', value: [v('全部', ''), v('2026', '2026'), v('2025', '2025'), v('2024', '2024'), v('2023', '2023'), v('2022', '2022'), v('2021', '2021'), v('2020', '2020'), v('2019', '2019'), v('2018', '2018'), v('2017', '2017'), v('2016', '2016'), v('2015', '2015'), v('2014', '2014'), v('2013', '2013'), v('2012', '2012'), v('2011', '2011'), v('2010', '2010')] },
-      { key: 'lang', name: '语言', value: [v('全部', ''), v('国语', '国语'), v('粤语', '粤语'), v('英语', '英语'), v('日语', '日语'), v('韩语', '韩语'), v('全部', '全部')] }
+      { key: 'lang', name: '语言', value: [v('全部', ''), v('国语', '国语'), v('英语', '英语'), v('粤语', '粤语'), v('韩语', '韩语'), v('日语', '日语'), v('泰语', '泰语'), v('其他', '其他')] }
     ],
     '3': [
-      { key: 'type', name: '类型', value: [v('全部', ''), v('国产综艺', '69'), v('日韩综艺', '70'), v('欧美综艺', '72'), v('港台综艺', '73')] },
-      { key: 'class', name: '剧情', value: [v('全部', ''), v('真人秀', '真人秀'), v('脱口秀', '脱口秀'), v('访谈', '访谈')] },
-      { key: 'area', name: '地区', value: [v('全部', ''), v('中国大陆', '中国大陆'), v('中国香港', '中国香港'), v('中国台湾', '中国台湾'), v('美国', '美国'), v('日本', '日本'), v('韩国', '韩国'), v('全部', '全部')] },
+      { key: 'type', name: '类型', value: [v('全部', ''), v('国产综艺', '69'), v('港台综艺', '70'), v('日韩综艺', '72'), v('欧美综艺', '73')] },
+      { key: 'class', name: '剧情', value: [v('全部', ''), v('真人秀', '真人秀'), v('音乐', '音乐'), v('脱口秀', '脱口秀')] },
+      { key: 'area', name: '地区', value: [v('全部', ''), v('中国大陆', '中国大陆'), v('中国香港', '中国香港'), v('中国台湾', '中国台湾'), v('日本', '日本'), v('韩国', '韩国'), v('美国', '美国'), v('其他', '其他')] },
       { key: 'year', name: '年份', value: [v('全部', ''), v('2026', '2026'), v('2025', '2025'), v('2024', '2024'), v('2023', '2023'), v('2022', '2022'), v('2021', '2021'), v('2020', '2020')] },
-      { key: 'lang', name: '语言', value: [v('全部', ''), v('国语', '国语'), v('粤语', '粤语'), v('英语', '英语'), v('日语', '日语'), v('韩语', '韩语'), v('全部', '全部')] }
+      { key: 'lang', name: '语言', value: [v('全部', ''), v('国语', '国语'), v('英语', '英语'), v('粤语', '粤语'), v('韩语', '韩语'), v('日语', '日语'), v('其他', '其他')] }
     ],
     '4': [
-      { key: 'type', name: '类型', value: [v('全部', ''), v('国产动漫', '75'), v('欧美动漫', '76'), v('港台动漫', '77')] },
-      { key: 'class', name: '剧情', value: [v('全部', ''), v('动作', '动作'), v('科幻', '科幻'), v('热血', '热血'), v('冒险', '冒险'), v('喜剧', '喜剧'), v('爱情', '爱情'), v('武侠', '武侠'), v('奇幻', '奇幻')] },
-      { key: 'area', name: '地区', value: [v('全部', ''), v('中国大陆', '中国大陆'), v('美国', '美国'), v('日本', '日本'), v('全部', '全部')] },
+      { key: 'type', name: '类型', value: [v('全部', ''), v('国产动漫', '75'), v('日韩动漫', '76'), v('欧美动漫', '77')] },
+      { key: 'class', name: '剧情', value: [v('全部', ''), v('喜剧', '喜剧'), v('科幻', '科幻'), v('热血', '热血'), v('冒险', '冒险'), v('动作', '动作'), v('运动', '运动'), v('战争', '战争'), v('动画', '动画')] },
+      { key: 'area', name: '地区', value: [v('全部', ''), v('中国大陆', '中国大陆'), v('日本', '日本'), v('美国', '美国'), v('其他', '其他')] },
       { key: 'year', name: '年份', value: [v('全部', ''), v('2026', '2026'), v('2025', '2025'), v('2024', '2024'), v('2023', '2023'), v('2022', '2022'), v('2021', '2021'), v('2020', '2020'), v('2019', '2019'), v('2018', '2018'), v('2017', '2017'), v('2016', '2016'), v('2015', '2015'), v('2014', '2014'), v('2013', '2013'), v('2012', '2012'), v('2011', '2011'), v('2010', '2010')] },
-      { key: 'lang', name: '语言', value: [v('全部', ''), v('国语', '国语'), v('粤语', '粤语'), v('英语', '英语'), v('全部', '全部')] }
+      { key: 'lang', name: '语言', value: [v('全部', ''), v('国语', '国语'), v('英语', '英语'), v('日语', '日语'), v('其他', '其他')] }
     ],
     '88': [
-      { key: 'type', name: '类型', value: [v('全部', ''), v('动作', '100'), v('悬疑', '99'), v('奇幻', '98'), v('恐怖', '97'), v('古装', '96'), v('爱情', '95'), v('犯罪', '94')] },
-      { key: 'class', name: '剧情', value: [v('全部', ''), v('赘婿', '赘婿'), v('神医', '神医'), v('逆袭', '逆袭'), v('重生', '重生'), v('穿越', '穿越'), v('犯罪', '犯罪'), v('科幻', '科幻'), v('第[?]季', '第[?]季'), v('爱情', '爱情'), v('喜剧', '喜剧'), v('武侠', '武侠'), v('冒险', '冒险'), v('全部', '全部')] },
+      { key: 'type', name: '类型', value: [v('全部', ''), v('喜剧', '100'), v('奇幻', '99'), v('惊悚', '98'), v('悬疑', '97'), v('古装', '96'), v('爱情', '95'), v('剧情', '94')] },
+      { key: 'class', name: '剧情', value: [v('全部', ''), v('逆袭', '逆袭'), v('甜宠', '甜宠'), v('虐恋', '虐恋'), v('穿越', '穿越'), v('重生', '重生'), v('剧情', '剧情'), v('科幻', '科幻'), v('武侠', '武侠'), v('爱情', '爱情'), v('动作', '动作'), v('战争', '战争'), v('冒险', '冒险'), v('其他', '其他')] },
       { key: 'year', name: '年份', value: [v('全部', ''), v('2026', '2026'), v('2025', '2025'), v('2024', '2024'), v('2023', '2023'), v('2022', '2022'), v('2021', '2021'), v('2020', '2020'), v('更早', '更早')] }
     ]
   };
@@ -388,8 +388,8 @@ async function detail(id) {
       return m ? m[1] : '';
     };
     const eps = extractJsonByKey(ft, 'episodeList') || [];
-    const list = eps.map(function (ep) { return str(ep.name || '第01集') + '$' + vid + '_' + str(ep.nid || ''); }).join('#');
-    return output({ list: [{ vod_id: vid, vod_name: get('vodName'), vod_pic: get('vodPic'), vod_actor: get('vodActor'), vod_director: get('vodDirector'), vod_content: stripTags(get('vodContent') || get('vodBlurb')), vod_area: get('vodArea'), vod_lang: get('vodLang'), vod_year: get('vodYear') || get('vodPubdate'), type_name: get('typeName') || get('vodClass'), vod_remarks: get('vodRemarks') || get('vodVersion'), vod_play_from: list ? '金牌影视' : '', vod_play_url: list }] });
+    const list = eps.map(function (ep) { return str(ep.name || '正片') + '$' + vid + '_' + str(ep.nid || ''); }).join('#');
+    return output({ list: [{ vod_id: vid, vod_name: get('vodName'), vod_pic: get('vodPic'), vod_actor: get('vodActor'), vod_director: get('vodDirector'), vod_content: stripTags(get('vodContent') || get('vodBlurb')), vod_area: get('vodArea'), vod_lang: get('vodLang'), vod_year: get('vodYear') || get('vodPubdate'), type_name: get('typeName') || get('vodClass'), vod_remarks: get('vodRemarks') || get('vodVersion'), vod_play_from: list ? '金牌影院' : '', vod_play_url: list }] });
   }
 }
 
@@ -436,7 +436,7 @@ async function play(flag, id, vipFlags) {
     const list = await apiPlay(vodId, nid, playPage);
     const selected = selectPlayItem(list);
     if (selected) return output({ parse: 0, url: selected.url, header: PLAY_HEADERS });
-    throw new Error('播放地址获取失败，请稍后重试');
+    throw new Error('播放线路不可用');
   }
   if (s.indexOf('http') === 0 && /\.m3u8(?:[?#]|$)/i.test(s)) return output({ parse: 0, url: s, header: PLAY_HEADERS });
   const html = await httpGet(playPage);
@@ -445,7 +445,7 @@ async function play(flag, id, vipFlags) {
   if (m3) return output({ parse: 0, url: m3[1], header: PLAY_HEADERS });
   const mp4 = /(https?:[^"'\\s<>]+\.mp4[^"'\\s<>]*)/i.exec(all);
   if (mp4) return output({ parse: 0, url: mp4[1], header: PLAY_HEADERS });
-  throw new Error('视频地址获取失败，请稍后重试');
+  throw new Error('播放地址不可用');
 }
 
 async function homeContent(filter) { return home(filter); }
