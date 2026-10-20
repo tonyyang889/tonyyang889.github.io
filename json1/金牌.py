@@ -1,7 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Author  : Doubebly
-# @Time    : 2025/5/29 22:07
-# 代码来源：https://github.com/franksun1211/TXT/blob/main/TVbox/VS194-SU147/drpy_js/金牌.py https://clun.top/box.json-https://clun.top/py/goldmedal.py
 
 import sys
 import hashlib
