@@ -25,6 +25,54 @@ class Spider(Spider):
         'Referer': 'https://www.dbku.tv/'
     }, 'https://api.dbokutv.com'
 
+    # ======================= 限制级影片过滤配置（新增） =======================
+    # 1) 精确名称过滤：把不想显示的电影/剧集完整名称放这里（会做去空格、去括号后缀的模糊匹配）
+    BLOCK_NAMES = [
+        # 示例，请按需替换成你要过滤的真实片名：
+        # '某某限制级影片',
+        # '另一部不想显示的电影',
+    ]
+
+    # 2) 关键词过滤：名称中包含以下任一关键词即被过滤（大小写不敏感）
+    BLOCK_KEYWORDS = [
+        # 示例，请按需修改：
+        '宝莲灯','老江湖','空枪',
+    ]
+
+    # 3) 是否启用过滤总开关
+    ENABLE_BLOCK = True
+
+    def _is_blocked(self, name):
+        """判断某个影片名称是否应被过滤"""
+        if not self.ENABLE_BLOCK or not name:
+            return False
+        n = str(name).strip()
+        # 去掉常见的括号/方括号后缀，便于模糊匹配
+        import re
+        n_clean = re.sub(r'[\(（\[【].*?[\)）\]】]', '', n).strip()
+        n_lower = n_clean.lower()
+
+        # 关键词匹配
+        for kw in self.BLOCK_KEYWORDS:
+            if kw and kw.lower() in n_lower:
+                return True
+        # 精确/模糊名称匹配
+        for bn in self.BLOCK_NAMES:
+            if not bn:
+                continue
+            bn_clean = str(bn).strip()
+            bn_lower = bn_clean.lower()
+            if n_lower == bn_lower or bn_lower in n_lower:
+                return True
+        return False
+
+    def _filter_videos(self, videos):
+        """对返回的影片列表做统一过滤"""
+        if not self.ENABLE_BLOCK:
+            return videos
+        return [v for v in videos if not self._is_blocked(v.get('vod_name', ''))]
+    # ===================== 限制级影片过滤配置结束 =====================
+
     def init(self, extend=""):
         pass
 
@@ -125,6 +173,7 @@ class Spider(Spider):
                     'vod_pic': self.decode(j['TnId']),
                     'vod_remarks': j['Tag']
                 })
+        videos = self._filter_videos(videos)   # 新增：首页推荐过滤
         return {'list': videos}
 
     def categoryContent(self, tid, pg, filter, extend):
@@ -160,6 +209,7 @@ class Spider(Spider):
                         if pgcount: pagecount = pgcount
             except Exception:
                 pagecount = 1
+        videos = self._filter_videos(videos)   # 新增：分类列表过滤
         return {'list': videos,'pagecount': pagecount, 'page': pg}
 
     def searchContent(self, key, quick, pg='1'):
@@ -174,6 +224,7 @@ class Spider(Spider):
                 'vod_actor': i['Actor'],
                 'vod_score': i['Rating']
             })
+        videos = self._filter_videos(videos)   # 新增：搜索结果过滤
         return {'list': videos, 'page': pg}
 
     def detailContent(self, ids):
