@@ -3,10 +3,10 @@
  * 作者：deepseek
  * 版本：1.0
  * 最后更新：2025-12-17
- * 发布页 https://gaze.run/
+ * 发布页 https://gaze.red/
  */
 
-const baseUrl = 'https://gaze.run/';
+const baseUrl = 'https://gaze.red/';
 
 /**
  * 初始化配置
