@@ -10,6 +10,71 @@ const HEADERS = { 'User-Agent': UA, 'Referer': baseUrl + '/', 'Accept': 'text/ht
 const API_HEADERS = { 'User-Agent': UA, 'Referer': baseUrl + '/', 'Accept': 'application/json' };
 const PLAY_HEADERS = { 'User-Agent': UA, 'Referer': baseUrl + '/', 'Origin': baseUrl };
 
+/* ===================== 过滤配置（你只需改这里） ===================== */
+// 命中以下任一关键词（不区分大小写、忽略空白）的影片会被过滤掉
+// 名称、演员、简介、类型、地区、语言、备注 任一字段命中即过滤
+const BLOCK_KEYWORDS = [
+  '牛仔杀人狂','别惹麻烦','异类'
+];
+// 需要过滤的影片 ID 精确黑名单（可选，填字符串 ID）
+const BLOCK_IDS = [
+  // '12345',
+];
+// 需要过滤的影片名称精确黑名单（可选，填完整名称）
+const BLOCK_NAMES = [
+  // '某部电影',
+];
+
+// 判断单个关键词是否命中（忽略大小写；中文直接包含；英文按词边界避免误伤如 "av" 命中 "avatar"）
+function matchKeyword(text, kw) {
+  const t = str(text).toLowerCase();
+  const k = str(kw).toLowerCase().trim();
+  if (!t || !k) return false;
+  // 纯英文/数字关键词用词边界匹配，避免 "av" 命中 "avatar"、"save" 等
+  if (/^[a-z0-9+]+$/.test(k)) {
+    const re = new RegExp('(^|[^a-z0-9])' + k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '([^a-z0-9]|$)', 'i');
+    return re.test(t);
+  }
+  return t.indexOf(k) >= 0;
+}
+
+// 判断一个影片对象是否应被过滤
+function isBlockedVod(item) {
+  if (!item) return false;
+  const id = str(item.vod_id || item.id || '').trim();
+  if (id && BLOCK_IDS.indexOf(id) >= 0) return true;
+  const name = str(item.vod_name || item.name || '').trim();
+  if (name && BLOCK_NAMES.indexOf(name) >= 0) return true;
+  const fields = [
+    item.vod_name, item.name, item.vod_sub, item.vod_en,
+    item.vod_actor, item.vod_director, item.vod_content, item.vod_blurb,
+    item.type_name, item.vod_class, item.vod_area, item.vod_lang,
+    item.vod_remarks, item.vod_version, item.vod_serial, item.remark
+  ];
+  for (const f of fields) {
+    const val = str(f);
+    if (!val) continue;
+    for (const kw of BLOCK_KEYWORDS) {
+      if (matchKeyword(val, kw)) return true;
+    }
+  }
+  return false;
+}
+
+// 过滤列表
+function filterVodList(list) {
+  if (!Array.isArray(list)) return [];
+  return list.filter(function (it) { return !isBlockedVod(it); });
+}
+
+// 过滤播放串（按 # 分集，按 $ 分名与地址）——详情被直接访问时用
+function filterPlayUrl(playUrl, vodName) {
+  // 整个影片命中关键词则直接清空
+  if (isBlockedVod({ vod_name: vodName })) return '';
+  return str(playUrl);
+}
+/* ================================================================== */
+
 async function init(cfg) { return {}; }
 function destroy() { return {}; }
 function live(u) { return JSON.stringify([]); }
@@ -454,127 +519,5 @@ async function categoryContent(tid, pg, filter, extend) { return category(tid, p
 async function detailContent(ids) { const id = Array.isArray(ids) ? ids[0] : ids; return detail(id); }
 async function searchContent(key, quick, pg) { return search(key, quick, pg); }
 async function playerContent(flag, id, vipFlags) { return play(flag, id, vipFlags); }
-
-/* ==================== 限制级影片过滤（附加代码，不改原逻辑） ==================== */
-
-// 需要屏蔽的影片名称（精确匹配，忽略首尾空格与大小写；如需模糊匹配可自行改 includes）
-const BLOCKED_NAMES = [
-  '牛仔杀人狂',
-  '别惹麻烦',
-  '异类'
-  // 在这里继续添加要屏蔽的影片名称
-];
-
-// 用于收藏/详情页的屏蔽 ID 缓存
-const BLOCKED_IDS = new Set();
-
-function isBlockedName(name) {
-  const n = str(name).trim();
-  if (!n) return false;
-  const lower = n.toLowerCase();
-  for (const b of BLOCKED_NAMES) {
-    if (lower === str(b).trim().toLowerCase()) return true;
-    // 如需模糊匹配，取消下面注释
-    // if (lower.includes(str(b).trim().toLowerCase())) return true;
-  }
-  return false;
-}
-
-function rememberBlocked(item) {
-  if (item && item.vod_id && isBlockedName(item.vod_name)) {
-    BLOCKED_IDS.add(str(item.vod_id));
-  }
-}
-
-function filterVodList(list) {
-  if (!Array.isArray(list)) return list;
-  const out = [];
-  for (const item of list) {
-    if (!item) continue;
-    if (isBlockedName(item.vod_name) || BLOCKED_IDS.has(str(item.vod_id))) {
-      rememberBlocked(item);
-      continue;
-    }
-    out.push(item);
-  }
-  return out;
-}
-
-// 包装 output 结果中的 list（兼容 JSON 字符串或对象）
-function filterOutputResult(result) {
-  let obj = result;
-  let needStringify = false;
-  if (typeof result === 'string') {
-    try { obj = JSON.parse(result); } catch (e) { return result; }
-    needStringify = true;
-  }
-  if (obj && Array.isArray(obj.list)) {
-    obj.list = filterVodList(obj.list);
-  }
-  return needStringify ? JSON.stringify(obj) : obj;
-}
-
-// 保存原始函数引用
-const _origin = {
-  home: home,
-  homeVod: homeVod,
-  category: category,
-  detail: detail,
-  search: search,
-  homeContent: homeContent,
-  homeVideoContent: homeVideoContent,
-  categoryContent: categoryContent,
-  detailContent: detailContent,
-  searchContent: searchContent
-};
-
-// 重新定义包装函数
-home = async function (filter) {
-  return filterOutputResult(await _origin.home(filter));
-};
-homeVod = async function () {
-  return filterOutputResult(await _origin.homeVod());
-};
-category = async function (tid, pg, filter, extend) {
-  return filterOutputResult(await _origin.category(tid, pg, filter, extend));
-};
-search = async function (key, quick, pg) {
-  return filterOutputResult(await _origin.search(key, quick, pg));
-};
-detail = async function (id) {
-  const res = filterOutputResult(await _origin.detail(id));
-  // 详情页若命中屏蔽名，直接返回空列表
-  let obj = res;
-  if (typeof res === 'string') { try { obj = JSON.parse(res); } catch (e) { return res; } }
-  if (obj && Array.isArray(obj.list) && obj.list.length) {
-    const vod = obj.list[0];
-    if (isBlockedName(vod.vod_name)) {
-      BLOCKED_IDS.add(str(vod.vod_id));
-      return JSON.stringify({ list: [] });
-    }
-    // 详情页可能返回多集，若名称被屏蔽也不返回
-    if (BLOCKED_IDS.has(str(vod.vod_id))) return JSON.stringify({ list: [] });
-  }
-  return res;
-};
-
-homeContent = async function (filter) {
-  return filterOutputResult(await _origin.homeContent(filter));
-};
-homeVideoContent = async function () {
-  return filterOutputResult(await _origin.homeVideoContent());
-};
-categoryContent = async function (tid, pg, filter, extend) {
-  return filterOutputResult(await _origin.categoryContent(tid, pg, filter, extend));
-};
-detailContent = async function (ids) {
-  const res = await detail(Array.isArray(ids) ? ids[0] : ids);
-  return res;
-};
-searchContent = async function (key, quick, pg) {
-  return filterOutputResult(await _origin.searchContent(key, quick, pg));
-};
-
-/* ==================== 过滤代码结束 ==================== */
 
 export default { init, home, homeVod, category, detail, search, play, live, proxy, action, sniffer, isVideo, destroy, homeContent, homeVideoContent, categoryContent, detailContent, searchContent, playerContent };
