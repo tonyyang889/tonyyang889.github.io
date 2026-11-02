@@ -14,7 +14,7 @@ const PLAY_HEADERS = { 'User-Agent': UA, 'Referer': baseUrl + '/', 'Origin': bas
 // 命中以下任一关键词（不区分大小写、忽略空白）的影片会被过滤掉
 // 名称、演员、简介、类型、地区、语言、备注 任一字段命中即过滤
 const BLOCK_KEYWORDS = [
-  '牛仔杀人狂','别惹麻烦','异类'
+  '牛仔杀人狂','别惹麻烦','异类',
 ];
 // 需要过滤的影片 ID 精确黑名单（可选，填字符串 ID）
 const BLOCK_IDS = [
