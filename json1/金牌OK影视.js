@@ -1,10 +1,7 @@
-/**
- * 发布页 https://www.jpyy.com/
- *//JS文件参考：PG源 https://clun.top/box.json  https://clun.top/js/金牌影视.js  （tvbox无法用）  https://gh.927223.xyz/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json  https://www.610pkea.com,https://www.gs4x7nq4.com,https://www.gs4x7nq4.com-https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.sizhengxt.com,https://m.jiabaide.cn,https://m.sunnafh.com
-
 var rule = {
   title: '金牌影院',
   host: 'https://www.x8kb9k8.com',
+  //JS文件参考：https://gh.927223.xyz/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json //https://www.610pkea.com,https://www.x8kb9k8.com,https://www.x8kb9k8.com-https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.sizhengxt.com,https://m.jiabaide.cn,https://m.sunnafh.com
   url: '/api/mw-movie/anonymous/video/list?pageNum=fypage&pageSize=30&sort=1&sortBy=1&type1=fyclass',
   searchUrl: '/api/mw-movie/anonymous/video/searchByWordPageable?keyword=**&pageNum=fypage&pageSize=12&type=false',
   headers: {
