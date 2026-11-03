@@ -1,3 +1,7 @@
+/**
+ * 发布页 https://www.jpyy.com/
+ *//JS文件参考：PG源 https://clun.top/box.json  https://clun.top/js/金牌影视.js  （tvbox无法用）  https://gh.927223.xyz/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json  https://www.610pkea.com,https://www.gs4x7nq4.com,https://www.gs4x7nq4.com-https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.sizhengxt.com,https://m.jiabaide.cn,https://m.sunnafh.com
+
 var rule = {
   title: '金牌影院',
   host: 'https://www.x8kb9k8.com',
@@ -67,7 +71,8 @@ var rule = {
     't': t
     }}));
      let link = json_data.data.list[0].url;
-     if(/\\.(m3u8|mp4)/.test(link)){input={jx:0,parse:0,url:link}}else{input={jx:0,parse:1,url:link}}
+     let isDirect = /\\.(m3u8|mp4)/.test(link);
+     JSON.stringify(input = {parse: 0, url: link});
   `,
   一级: `js:
     let d = [];
