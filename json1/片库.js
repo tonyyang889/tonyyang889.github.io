@@ -1,7 +1,7 @@
 /**
  * OK影视 / CatVodSpider JS版 - 片库网爬虫（性能优化版）
  */
-//https://v6.gh-proxy.org/https://github.com/woshishiq1/hipy-drpy2/blob/d16c0b4218d0113a3e4c5a930db5deb0129dface/bd/ys/api.json 拾光影视
+//https://fb.pianku.online/---https://v6.gh-proxy.org/https://github.com/woshishiq1/hipy-drpy2/blob/d16c0b4218d0113a3e4c5a930db5deb0129dface/bd/ys/api.json 拾光影视
 
 const HOST = "https://4k01.pianku.online";
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
