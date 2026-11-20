@@ -1,6 +1,6 @@
 {
 "站名": "4K影院",
-"主页url": "https://www.4kvm.top",
+"主页url": "https://www.4kvms.org",
 //https://4kvm.site/ https://www.4kvm.cc/ https://www.4kvm.tv/ https://www.4kvm.pro https://www.pipiysb.com/ https://www.4kvm.net https://www.4kvm.com https://www.4kvm.org/
 "热门推荐": "0",
 "请求头": "电脑",
@@ -43,7 +43,7 @@
 
 //"调试":"1",
 
-"搜索url": "https://www.4kvm.top/search?q={wd}",
+"搜索url": "https://www.4kvms.org/search?q={wd}",
 "搜索模式": "1",
 "搜索二次截取": "",
 "搜索数组": "class=\"group relative\">&&class=\"lazy w-full h-full",
@@ -52,7 +52,7 @@
 "搜索链接": "href=\"&&\"",
 "搜索链接前缀": "",
 
-"分类url": "https://www.4kvm.top/filter?classify={cateId}&years={year}&page={catePg}",
+"分类url": "https://www.4kvms.org/filter?classify={cateId}&years={year}&page={catePg}",
 "分类": "电视剧&电影&动漫",
 "分类值": "2&1&3",
 
