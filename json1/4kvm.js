@@ -79,6 +79,20 @@ function filterList(list) {
 
 function cleanText(s) { return decodeEnt(String(s || "").replace(CLEAN_REG, " ")).replace(/\s+/g, " ").trim(); }
 
+// 提取详情页 grid 里的字段（导演 / 主演 / 类型 等），形如：
+// <div class="col-span-1 text-gray-500">导演</div> <div class="col-span-2 text-gray-300">孙皓</div>
+function extractDetailMeta(html) {
+    const meta = {};
+    const reg = /<div class="col-span-1 text-gray-500">([^<]+)<\/div>\s*<div class="col-span-2 text-gray-300">([\s\S]*?)<\/div>/gi;
+    let m;
+    while ((m = reg.exec(String(html || ""))) !== null) {
+        const key = cleanText(m[1]);
+        const val = cleanText(m[2]);
+        if (key && val) meta[key] = val;
+    }
+    return meta;
+}
+
 function getVodList(html) {
     const list = [];
     const seen = {};
@@ -246,13 +260,20 @@ async function detail(id) {
         for (let i = 0; i < lines.length; i++) {
             const eps = byLine[lines[i]].sort(function (a, b) { return a.ep - b.ep; });
             if (!eps.length) continue;
-            fromList.push("影视" + (i + 1));
+            fromList.push("线路" + (i + 1));
             urlList.push(eps.map(function (e) { return e.name + "$" + e.url; }).join("#"));
         }
 
+        const meta = extractDetailMeta(html);
         const vod = {
-            vod_id: id, vod_name: title, vod_pic: pic, vod_year: year,
+            vod_id: id, vod_name: title, vod_pic: pic,
+            // 优先用详情 grid 的「上映」字段，避免从整页 HTML 误匹配到导航里的年份
+            vod_year: ((meta["上映"] || "").match(/(?:19|20)\d{2}/) || [""])[0] || year,
             vod_remarks: (html.match(/全\d+集|更新至\d+集|完结/) || [])[0] || "",
+            vod_director: meta["导演"] || "",
+            vod_actor: meta["主演"] || "",
+            vod_class: meta["类型"] || "",
+            vod_area: meta["地区"] || "",
             vod_content: cleanText(desc),
             vod_play_from: fromList.join("$$$"),
             vod_play_url: urlList.join("$$$")
