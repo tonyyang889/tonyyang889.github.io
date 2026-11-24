@@ -11,7 +11,7 @@
   "影片类型": "影视界",
   "导演": "导演：&&</p>",
   "主演": "主演：&&</p>",
-  "简介": "请勿相信视频中出现的广告:+豆瓣 0.0 </a> 分 </span>&&</p>",
+  "简介": "请勿相信视频中出现的广告:+style=\"color: #5bb7fe;\">&&</p>",
   
 "二次截取": "class=\"myui-vodlist clearfix\">&&class=\"myui-page text-center clearfix",	
 "数组": "class=\"myui-vodlist__box\">&&class=\"myui-vodlist__detail\">",
